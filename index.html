@@ -852,6 +852,286 @@
             .nav-dropdown:hover .dropdown-menu,
             .nav-dropdown.open .dropdown-menu { transform: translateX(-50%) translateY(0); }
         }
+
+        /* --- Full Case Study Showcase Styles --- */
+        .noc-privacy-banner {
+            background: rgba(204, 255, 0, 0.07);
+            border: 1px solid rgba(204, 255, 0, 0.35);
+            border-radius: 14px;
+            padding: 1rem 1.35rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.88rem;
+            color: var(--text-main);
+        }
+        .noc-privacy-banner span.shield-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .noc-section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-main);
+            margin: 2.2rem 0 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 0.85rem;
+        }
+        .noc-section-subtitle span {
+            color: var(--accent);
+        }
+
+        /* Video Showcase Tabs & Player */
+        .noc-video-tabs {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.2rem;
+        }
+        .noc-video-tab {
+            background: #111318;
+            color: var(--text-muted);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 0.55rem 1.05rem;
+            border-radius: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+        .noc-video-tab:hover,
+        .noc-video-tab.active {
+            background: rgba(204, 255, 0, 0.14);
+            color: var(--accent);
+            border-color: var(--accent);
+            box-shadow: 0 4px 15px rgba(204, 255, 0, 0.12);
+        }
+        .noc-video-stage {
+            background: #0b0c0f;
+            border: 1px solid rgba(204, 255, 0, 0.28);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+        }
+        .noc-video-stage video {
+            width: 100%;
+            max-height: 540px;
+            display: block;
+            background: #000;
+        }
+        .noc-video-caption-bar {
+            padding: 1rem 1.4rem;
+            background: #14171f;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .noc-video-caption-bar h5 {
+            margin: 0;
+            color: var(--accent);
+            font-size: 1rem;
+        }
+        .noc-video-caption-bar p {
+            margin: 0.2rem 0 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Screenshot Gallery Grid */
+        .noc-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1rem;
+        }
+        .noc-shot-card {
+            background: #111318;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .noc-shot-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+        }
+        .noc-shot-thumb-wrap {
+            position: relative;
+            height: 175px;
+            overflow: hidden;
+            background: #090a0d;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .noc-shot-thumb-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.35s ease;
+        }
+        .noc-shot-card:hover .noc-shot-thumb-wrap img {
+            transform: scale(1.04);
+        }
+        .noc-shot-zoom-badge {
+            position: absolute;
+            right: 0.65rem;
+            bottom: 0.65rem;
+            background: rgba(15, 16, 19, 0.88);
+            color: var(--accent);
+            border: 1px solid rgba(204, 255, 0, 0.45);
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+        }
+        .noc-shot-body {
+            padding: 1rem 1.15rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+        .noc-shot-tag {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+        }
+        .noc-shot-body h5 {
+            margin: 0;
+            font-size: 0.96rem;
+            color: var(--text-main);
+        }
+        .noc-shot-body p {
+            margin: 0;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Architecture & SLA Tables/Grids */
+        .noc-arch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1rem;
+        }
+        .noc-arch-card {
+            background: #111318;
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 14px;
+            padding: 1.35rem;
+        }
+        .noc-arch-card h5 {
+            margin: 0 0 0.75rem;
+            color: var(--accent);
+            font-size: 1.02rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .noc-sla-table-wrap {
+            overflow-x: auto;
+            margin-top: 1rem;
+            background: #111318;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+        }
+        .noc-sla-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+        .noc-sla-table th,
+        .noc-sla-table td {
+            padding: 0.85rem 1.1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        }
+        .noc-sla-table th {
+            background: rgba(204, 255, 0, 0.08);
+            color: var(--accent);
+            font-weight: 700;
+        }
+        .noc-sla-table tr:last-child td {
+            border-bottom: none;
+        }
+        .noc-live-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: rgba(204, 255, 0, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(204, 255, 0, 0.45);
+            padding: 0.2rem 0.65rem;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            margin-left: 0.5rem;
+        }
+
+        /* Lightbox Modal */
+        .noc-lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(7, 8, 12, 0.92);
+            backdrop-filter: blur(8px);
+            z-index: 3000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .noc-lightbox.open {
+            display: flex;
+        }
+        .noc-lightbox-img {
+            max-width: 94vw;
+            max-height: 80vh;
+            border-radius: 12px;
+            border: 2px solid var(--accent);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            background: #fff;
+        }
+        .noc-lightbox-caption {
+            color: var(--text-main);
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            max-width: 800px;
+        }
+        .noc-lightbox-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            background: var(--accent);
+            color: var(--bg-dark);
+            border: none;
+            padding: 0.5rem 1.1rem;
+            border-radius: 999px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
     </style>
 </head>
 <body data-view="portfolio">
@@ -1079,7 +1359,7 @@
                         <div class="card case-card-clickable" onclick="openCaseStudy('sitting', 'es')" role="button" tabindex="0">
                             <div>
                                 <h3>Sitting Digital para Bodas</h3>
-                                <span class="date-badge">Serverless | Google Apps Script</span>
+                                <span class="date-badge">Serverless | Google Apps Script</span><span class="noc-live-pill">🎬 Video Demo + 6 Capturas</span>
                                 <p>Desarrollo de un sistema web móvil interactivo para la gestión de invitados en tiempo real. Arquitectura serverless utilizando Google Sheets como base de datos y Apps Script. Frontend Mobile-First con JS ES6+, HTML5 y CSS3, con control de concurrencia y auditoría inmutable.</p>
                             </div>
                             <div class="case-card-action">
@@ -1090,7 +1370,7 @@
                         <div class="card case-card-clickable" onclick="openCaseStudy('noc', 'es')" role="button" tabindex="0">
                             <div>
                                 <h3>Mesa de Servicio NOC - Sector Telecom & Hospitality</h3>
-                                <span class="date-badge">Jira Service Management</span>
+                                <span class="date-badge">Jira Service Management</span><span class="noc-live-pill">🎬 5 Videos + 12 Capturas</span>
                                 <p>Diseño de JSM como centro de operaciones (NOC) para gestionar redes, fibra (GPON) y CCTV. Implementación de reglas estrictas de escalamiento departamental y SLAs dinámicos segmentados por prioridad (P1-P4). Integración multicanal vía REST API con centralitas (FreePBX) y sistemas de monitoreo (Zabbix/PRTG).</p>
                             </div>
                             <div class="case-card-action">
@@ -1154,28 +1434,453 @@
                             <button type="button" class="btn btn-outline" onclick="closeCaseStudy('es')">✕ Cerrar Vista Detallada</button>
                         </div>
 
-                        <div class="case-ComingSoon-banner">
-                            <h4>🚧 Próximamente cargaremos el contenido multimedia aquí</h4>
-                            <p>Estamos preparando las capturas de pantalla en alta resolución, los diagramas de flujo y el video demostrativo de este caso de estudio para mostrar el proyecto en funcionamiento.</p>
+                        <!-- Bloque Genérico para Casos en Preparación -->
+                        <div id="case-generic-es" style="display: none;">
+                            <div class="case-ComingSoon-banner">
+                                <h4>🚧 Próximamente cargaremos el contenido multimedia aquí</h4>
+                                <p>Estamos preparando las capturas de pantalla en alta resolución, los diagramas de flujo y el video demostrativo de este caso de estudio para mostrar el proyecto en funcionamiento.</p>
+                            </div>
+
+                            <div class="case-media-grid">
+                                <div class="media-placeholder-box">
+                                    <div class="media-placeholder-icon">🎬</div>
+                                    <h5>Video Demo del Proyecto</h5>
+                                    <span>Próximamente: Recorrido en video del flujo e interfaz en tiempo real</span>
+                                </div>
+                                <div style="display: grid; gap: 1rem;">
+                                    <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
+                                        <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">🖼️</div>
+                                        <h5>Galería de Capturas & UI</h5>
+                                        <span>Próximamente: Vistas de tableros, automatizaciones y pantallas</span>
+                                    </div>
+                                    <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
+                                        <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">📐</div>
+                                        <h5>Diagrama de Arquitectura & Flujo</h5>
+                                        <span>Próximamente: Esquema técnico de integraciones, APIs y reglas</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="case-media-grid">
-                            <div class="media-placeholder-box">
-                                <div class="media-placeholder-icon">🎬</div>
-                                <h5>Video Demo del Proyecto</h5>
-                                <span>Próximamente: Recorrido en video del flujo e interfaz en tiempo real</span>
+                        <!-- Bloque Completo del Caso de Estudio: SITTING DIGITAL PARA BODAS (ES) -->
+                        <div id="case-sitting-es">
+                            <div class="noc-privacy-banner">
+                                <span class="shield-icon">🛡️</span>
+                                <div>
+                                    <strong>Privacidad & Seguridad de Acceso:</strong> En el video demostrativo y las capturas de la base de datos mostradas a continuación, los <strong>códigos PIN de acceso del personal organizador y datos de prueba internos han sido censurados</strong> para proteger las credenciales del evento.
+                                </div>
                             </div>
-                            <div style="display: grid; gap: 1rem;">
-                                <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
-                                    <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">🖼️</div>
-                                    <h5>Galería de Capturas & UI</h5>
-                                    <span>Próximamente: Vistas de tableros, automatizaciones y pantallas</span>
+
+                            <!-- 1. VIDEO DEMO COMPLETO -->
+                            <h4 class="noc-section-subtitle">🎬 Video Demo del <span>Sistema en Tiempo Real (Frontend + Google Sheets DB)</span></h4>
+                            <div class="noc-video-stage">
+                                <video id="sitting-player-es" controls preload="metadata" muted playsinline src="assets/sitting/video-demo-sitting.mp4"></video>
+                                <div class="noc-video-caption-bar">
+                                    <div>
+                                        <h5>Recorrido Completo: Autenticación por PIN, Búsqueda Instantánea, Check-In en 2 Pasos y Persistencia en Vivo</h5>
+                                        <p>Demostración desde el acceso del staff (con validación de eventos activos/inactivos), registro de nombre del anfitrión para auditoría, confirmación de llegada y mesa en vivo, hasta la sincronización inmediata en las 3 tablas de Google Sheets.</p>
+                                    </div>
+                                    <span class="date-badge">PINs Censurados ✓</span>
                                 </div>
-                                <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
-                                    <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">📐</div>
-                                    <h5>Diagrama de Arquitectura & Flujo</h5>
-                                    <span>Próximamente: Esquema técnico de integraciones, APIs y reglas</span>
+                            </div>
+
+                            <!-- 2. GALERÍA DE CAPTURAS (6 IMÁGENES: 3 UI + 3 DB CON LIGHTBOX) -->
+                            <h4 class="noc-section-subtitle">📸 Galería de <span>Interfaz Mobile-First & Base de Datos Serverless (Haz clic para ampliar)</span></h4>
+                            <div class="noc-gallery-grid">
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/01-login-acceso-pin.png', 'Pantalla de Acceso Multi-Evento: validación por Código de Boda, PIN de seguridad del equipo (censurado) y bloqueo automático si el evento se encuentra inactivo')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/01-login-acceso-pin.png" alt="Login Sitting Digital" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Frontend · Seguridad</span>
+                                        <h5>Control de Acceso Multi-Evento & PIN</h5>
+                                        <p>Autenticación por código de evento y PIN del staff organizador, con validación automática de estado activo/inactivo antes de abrir el listado.</p>
+                                    </div>
                                 </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/02-panel-recepcion-kpis.png', 'Panel principal de Recepción: KPIs en vivo (Total, Llegaron, Sentados), campo de identificación del anfitrión para auditoría y buscador instantáneo por apellido, nombre o mesa')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/02-panel-recepcion-kpis.png" alt="Panel Recepción y KPIs" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">UI Mobile-First · Tiempo Real</span>
+                                        <h5>Dashboard de Recepción & Buscador Instantáneo</h5>
+                                        <p>Contadores dinámicos en vivo (Total, Llegaron, Sentados), registro del puesto/anfitrión y filtrado sin latencia desde las primeras letras del apellido.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/03-control-mesas-checkin.png', 'Tarjetas interactivas de invitados con doble confirmación en tiempo real: Llegada Registrada (con hora exacta) y Marcar Sentado en su mesa asignada')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/03-control-mesas-checkin.png" alt="Check-in y Control de Mesas" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Operación en Puerta · 2 Pasos</span>
+                                        <h5>Confirmación de Llegada & Sentado en Mesa</h5>
+                                        <p>Doble estado operativo por invitado (Llegada en puerta vs. Sentado en mesa) con marca de hora exacta y actualización instantánea de los KPIs globales.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/04-db-weddings-multitenant.png', 'Tabla Serverless Weddings en Google Sheets: gestión multi-boda mediante wedding_id, nombre_evento, fecha_evento, pin de seguridad y flag booleano activo')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/04-db-weddings-multitenant.png" alt="Tabla Weddings Google Sheets" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Google Sheets DB · Tabla 1</span>
+                                        <h5> Esquema Multi-Evento (<code>Weddings</code>)</h5>
+                                        <p>Permite administrar múltiples bodas o eventos corporativos desde una misma instancia, activando o desactivando el acceso en un clic.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/05-db-guests-sincronizacion.png', 'Tabla Serverless Guests: almacena guest_id, wedding_id, guest_code (INV-01..N), nombre, apellido, mesa asignada, notas de dieta y marcas de tiempo arrival_at / seated_at')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/05-db-guests-sincronizacion.png" alt="Tabla Guests Google Sheets" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Google Sheets DB · Tabla 2</span>
+                                        <h5>Padrón de Invitados & Estado (<code>Guests</code>)</h5>
+                                        <p>Sincronización bidireccional de códigos de invitación, mesa asignada, restricciones alimenticias, timestamps de llegada/sentado y último operador.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/06-db-event-log-auditoria.png', 'Tabla Inmutable Event_Log: bitácora de auditoría que registra cada cambio de estado (log_id, wedding_id, guest_id, guest_name, action, new_value, worker y timestamp exacto)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/06-db-event-log-auditoria.png" alt="Tabla Event_Log Auditoría" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Google Sheets DB · Tabla 3</span>
+                                        <h5>Bitácora de Auditoría Inmutable (<code>Event_Log</code>)</h5>
+                                        <p>Historial append-only de cada acción ejecutada por las anfitrionas: quién marcó o revirtió una llegada/asiento y en qué segundo exacto ocurrió.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. ARQUITECTURA TÉCNICA SERVERLESS -->
+                            <h4 class="noc-section-subtitle">📐 Arquitectura Serverless & <span>Ingeniería del Sistema</span></h4>
+                            <div class="noc-arch-grid">
+                                <div class="noc-arch-card">
+                                    <h5>☁️ Arquitectura Serverless Costo $0</h5>
+                                    <div class="code-flow" style="font-size:0.78rem; padding:0.9rem; margin-bottom:0.8rem;">
+[Móvil Anfitriona (SPA JS ES6+)] ──(HTTPS / google.script.run)──► [Google Apps Script Backend] ──(LockService)──► [Google Sheets DB (3 Tablas)]
+                                    </div>
+                                    <p style="margin:0; font-size:0.84rem; color:var(--text-muted);">
+                                        Desplegado como Web App en <strong>Google Apps Script</strong> utilizando <strong>Google Sheets</strong> como motor relacional ligero. Elimina por completo costos mensuales de VPS o bases de datos cloud y permite a los wedding planners cargar listas desde Excel en segundos.
+                                    </p>
+                                </div>
+
+                                <div class="noc-arch-card">
+                                    <h5>🔒 Control de Concurrencia (LockService)</h5>
+                                    <ul class="styled-list" style="margin:0; font-size:0.86rem;">
+                                        <li><strong>Prevención de Race Conditions:</strong> Uso de bloqueos atómicos en el servidor cuando múltiples anfitrionas registran invitados al mismo segundo desde distintos teléfonos.</li>
+                                        <li><strong>Actualización Optimista en UI:</strong> Respuesta visual instantánea en el teléfono mientras el backend confirma la escritura transaccional.</li>
+                                        <li><strong>Reversión Segura:</strong> Permite desmarcar un check-in accidental dejando rastro completo en <code>Event_Log</code> (<code>FALSE</code> vs <code>TRUE</code>).</li>
+                                    </ul>
+                                </div>
+
+                                <div class="noc-arch-card">
+                                    <h5>📱 UX Pensada para Recepción en Vivo</h5>
+                                    <ul class="styled-list" style="margin:0; font-size:0.86rem;">
+                                        <li><strong>Búsqueda Tolerante y Rápida:</strong> Filtra en memoria por las primeras letras del apellido, nombre, código (<code>INV-01</code>) o número de mesa (<code>Mesa 1</code>).</li>
+                                        <li><strong>Trazabilidad por Anfitrión:</strong> Cada dispositivo define su puesto (ej. <em>Puerta Principal, Laura</em> o <em>Coordinación</em>) para auditar cargas de trabajo.</li>
+                                        <li><strong>Diseño Mobile-First:</strong> Botones táctiles de alto contraste legibles tanto en salones oscuros como en exteriores.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="noc-sla-table-wrap">
+                                <table class="noc-sla-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Tabla en <code>DB_Sitting_Bodas</code></th>
+                                            <th>Clave Primaria / Foránea</th>
+                                            <th>Campos Principales</th>
+                                            <th>Propósito Técnico en la Arquitectura</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong style="color:var(--accent);">1. Weddings</strong></td>
+                                            <td><code>wedding_id</code> (PK)</td>
+                                            <td><code>nombre_evento</code>, <code>fecha_evento</code>, <code>pin</code>, <code>activo</code></td>
+                                            <td>Control multi-tenant de eventos, validación de credenciales por PIN y encendido/apagado del acceso al evento.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong style="color:var(--accent);">2. Guests</strong></td>
+                                            <td><code>guest_id</code> (PK) · <code>wedding_id</code> (FK)</td>
+                                            <td><code>guest_code</code>, <code>first_name</code>, <code>last_name</code>, <code>table_name</code>, <code>arrival_at</code>, <code>seated_at</code>, <code>updated_by</code></td>
+                                            <td>Estado en tiempo real de cada invitado, asignación de mesa, notas dietéticas y marcas de tiempo de recepción.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong style="color:var(--accent);">3. Event_Log</strong></td>
+                                            <td><code>log_id</code> (PK) · <code>guest_id</code> (FK)</td>
+                                            <td><code>wedding_id</code>, <code>guest_name</code>, <code>action</code>, <code>new_value</code>, <code>worker</code>, <code>timestamp</code></td>
+                                            <td>Auditoría inmutable (append-only) de cada cambio de estado para trazabilidad operativa durante y después del evento.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Bloque Completo del Caso de Estudio NOC (Videos, Galería Censurada y Arquitectura) -->
+                        <div id="case-noc-es" style="display: none;">
+                            <div class="noc-privacy-banner">
+                                <span class="shield-icon">🛡️</span>
+                                <div>
+                                    <strong>Privacidad & Cumplimiento NDA:</strong> Todas las capturas y clips de video mostrados a continuación provienen de la implementación real en producción, con <strong>nombres de la empresa, dominios corporativos, URLs, correos y siglas de propiedades hoteleras censurados</strong> para proteger la confidencialidad del cliente.
+                                </div>
+                            </div>
+
+                            <!-- 1. RECORRIDOS EN VIDEO (5 CLIPS) -->
+                            <h4 class="noc-section-subtitle">🎬 Demos en Video del <span>Sistema en Producción (5 Clips)</span></h4>
+                            <div class="noc-video-tabs" id="noc-video-tabs-es">
+                                <button type="button" class="noc-video-tab active" onclick="switchNocVideo('es', 0, this)">1️⃣ Workflows Personalizados (14 Estados)</button>
+                                <button type="button" class="noc-video-tab" onclick="switchNocVideo('es', 1, this)">2️⃣ Formularios Condicionales & Solicitudes</button>
+                                <button type="button" class="noc-video-tab" onclick="switchNocVideo('es', 2, this)">3️⃣ Matriz de SLAs (P1-P4 & Pausa)</button>
+                                <button type="button" class="noc-video-tab" onclick="switchNocVideo('es', 3, this)">4️⃣ Reglas de Automatización & Escalamiento</button>
+                                <button type="button" class="noc-video-tab" onclick="switchNocVideo('es', 4, this)">5️⃣ Dashboard Ejecutivo NOC</button>
+                            </div>
+
+                            <div class="noc-video-stage">
+                                <video id="noc-player-es" controls preload="metadata" muted playsinline src="assets/noc/video-workflows.mp4"></video>
+                                <div class="noc-video-caption-bar">
+                                    <div>
+                                        <h5 id="noc-video-title-es">1. Flujos de Trabajo Personalizados (14 Estados Operativos)</h5>
+                                        <p id="noc-video-desc-es">Esquema de estados desde Nuevo y Clasificación NOC hasta Escalamiento Multi-Nivel (Infraestructura, Desarrollo, Instalaciones, Ventas, Administración), Validación del Cliente y Cierre Automático (+72h).</p>
+                                    </div>
+                                    <span class="date-badge">Datos Sensibles Censurados ✓</span>
+                                </div>
+                            </div>
+
+                            <!-- 2. GALERÍA DE CAPTURAS EN ALTA RESOLUCIÓN (12 IMÁGENES CON LIGHTBOX) -->
+                            <h4 class="noc-section-subtitle">📸 Galería Técnica de <span>Configuración & Reglas (Haz clic para ampliar)</span></h4>
+                            <div class="noc-gallery-grid">
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/08-flujo-trabajo-diagrama.png', 'Diagrama completo del Workflow NOC en Jira Service Management (14 estados y transiciones controladas)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/08-flujo-trabajo-diagrama.png" alt="Workflow NOC" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Workflows · 14 Estados</span>
+                                        <h5>Arquitectura del Flujo de Trabajo NOC</h5>
+                                        <p>Control de ciclo de vida completo con rutas de escalamiento N1–N5, estados de espera con pausa de SLA y reapertura controlada.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/01-colas-jql.png', 'Colas operativas personalizadas con filtros JQL (Nuevos sin clasificar, P1/P2 activos, SLA Broken, Escalados por área y +72h)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/01-colas-jql.png" alt="Colas JQL" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Operación Diaria · JQL</span>
+                                        <h5>16 Colas Personalizadas con JQL</h5>
+                                        <p>Bandejas en tiempo real para el equipo NOC: Nuevos sin clasificar, P1/P2 activos, SLA Broken, Escalados por departamento y tickets sin actualización +24h.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/02-custom-fields.png', 'Campos personalizados NOC para auditoría de causa raíz, acción correctiva/preventiva, IP/MAC/Serial y validación del cliente')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/02-custom-fields.png" alt="Custom Fields NOC" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Gobernanza · Datos</span>
+                                        <h5>Campos Personalizados de Auditoría (Custom Fields)</h5>
+                                        <p>Trazabilidad obligatoria: Causa raíz, Acción correctiva, Acción preventiva, Canal de entrada, Casos mal escalados, Equipo afectado e IP/MAC/Serial.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/09-tipos-solicitud-formularios.png', '11 Formularios dinámicos vinculados a tipos de solicitud (GPON/ONT, Wi-Fi, PBX, CCTV, Internet/WAN, Monitoreo NOC e IVR)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/09-tipos-solicitud-formularios.png" alt="Formularios NOC" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Portal & Autoservicio</span>
+                                        <h5>Formularios Dinámicos con Condicionales</h5>
+                                        <p>11 formularios especializados para capturar datos técnicos exactos desde el primer contacto (ONT/OLT, SSID/AP, extensiones PBX, cámaras/NVR).</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/10-solicitudes-incidentes.png', 'Clasificación estructurada de Incidentes de Red y Telecomunicaciones en Jira Service Management')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/10-solicitudes-incidentes.png" alt="Tipos de Incidente" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Clasificación ITSM</span>
+                                        <h5>Catálogo de Incidentes & Solicitudes</h5>
+                                        <p>Separación clara entre Incidentes operativos (Wi-Fi, GPON, PBX, CCTV, WAN, Alertas NOC) y Solicitudes (Instalación, Cambio, Comercial, IVR).</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/11-configuracion-sla.png', 'Configuración de SLAs diferenciados por prioridad (Highest 15m, High 20m, Medium 1h, Low 8h) y calendarios 24/7 vs 9-5')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/11-configuracion-sla.png" alt="Configuración SLA" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">SLAs Dinámicos · 24/7</span>
+                                        <h5>Motor de SLAs & Condiciones de Pausa</h5>
+                                        <p>Metas estrictas de primera respuesta y resolución con pausa automática cuando el ticket espera información del cliente o respuesta de proveedor/fabricante.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/12-dashboard-metricas.png', 'Dashboard ejecutivo para monitoreo de tickets abiertos, cerrados por inactividad, prioridades y tiempos por estado')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/12-dashboard-metricas.png" alt="Dashboard NOC" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">KPIs & Analítica</span>
+                                        <h5>Dashboard Ejecutivo de Operaciones NOC</h5>
+                                        <p>Visualización en tiempo real del volumen de tickets por estado, prioridad (P1/P2 activos), escalamientos departamentales y auditoría de cierres.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/03-mensaje-bienvenida.png', 'Notificación automática al cliente al crearse el ticket con enlace de seguimiento (URLs, nombres y correos censurados)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/03-mensaje-bienvenida.png" alt="Mensaje Automático Censurado" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Comunicación · Censurado</span>
+                                        <h5>Acuse de Recibo Automático al Cliente</h5>
+                                        <p>Respuesta inmediata confirmando el número de ticket, resumen del caso y enlace al portal del cliente (toda la información privada fue bloqueada).</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/04-regla-cierre-inactividad.png', 'Regla programada: Cierre automático tras 3 días (+72h) sin respuesta del cliente en estados de espera')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/04-regla-cierre-inactividad.png" alt="Regla Cierre Inactividad" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Automatización · +72h</span>
+                                        <h5>Cierre Automático por Inactividad (3 Días)</h5>
+                                        <p>Evalúa tickets estancados en espera del cliente/verificación por más de 72h, notifica públicamente y transiciona a Cerrado automático por inactividad.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/05-regla-enrutamiento-dominio.png', 'Regla de enrutamiento automático de Organización evaluando el dominio de correo del informante (Dominios censurados)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/05-regla-enrutamiento-dominio.png" alt="Enrutamiento por Dominio" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Automatización · Correo</span>
+                                        <h5>Enrutamiento de Organización por Dominio</h5>
+                                        <p>Detecta el dominio del correo entrante del reporter y asigna automáticamente el ticket a la Organización corporativa/hotelera correspondiente.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/06-regla-enrutamiento-siglas.png', 'Regla de detección de siglas de propiedades en el Resumen (Summary) y adición automática de Request Participants corporativos')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/06-regla-enrutamiento-siglas.png" alt="Enrutamiento por Siglas" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Automatización · Siglas</span>
+                                        <h5>Asignación por Siglas & Request Participants</h5>
+                                        <p>Analiza el asunto del ticket buscando siglas de propiedades para asignar la Organización y copiar automáticamente a los supervisores corporativos.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/07-regla-enrutamiento-portal.png', 'Vinculación automática del campo Organización cuando el usuario selecciona su propiedad en el formulario del Portal')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/07-regla-enrutamiento-portal.png" alt="Enrutamiento Portal" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Ampliar</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Automatización · Portal</span>
+                                        <h5>Sincronización Formulario → Organización</h5>
+                                        <p>Vincula la propiedad elegida por el usuario en el desplegable del portal con la Organización nativa de Jira Service Management.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. ARQUITECTURA TÉCNICA IMPLEMENTADA -->
+                            <h4 class="noc-section-subtitle">📐 Arquitectura Técnica & <span>Modelo Operativo Implementado</span></h4>
+                            <div class="noc-arch-grid">
+                                <div class="noc-arch-card">
+                                    <h5>🏢 5 Niveles de Soporte (Tiers)</h5>
+                                    <ul class="styled-list" style="margin:0; font-size:0.86rem;">
+                                        <li><strong>Nivel 1 — NOC:</strong> Recepción multicanal, clasificación, diagnóstico inicial y validación en sistemas de monitoreo.</li>
+                                        <li><strong>Nivel 2 — Infraestructura:</strong> Routing, switching, VLANs, GPON/ONT/OLT, Wi-Fi corporativo, Firewalls y VPN.</li>
+                                        <li><strong>Nivel 3 — Desarrollo / Integraciones:</strong> Portal cautivo, integraciones PMS hoteleras, APIs, casting y scripts.</li>
+                                        <li><strong>Nivel 4 — Instalaciones / Campo:</strong> Visitas técnicas en sitio, cableado estructurado, fibra y reemplazo físico.</li>
+                                        <li><strong>Nivel 5 — Comercial / Administración:</strong> Cotizaciones, ampliaciones, clientes sin contrato activo y facturación.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="noc-arch-card">
+                                    <h5>🔌 Integraciones API (IVR & Monitoreo)</h5>
+                                    <div class="code-flow" style="font-size:0.78rem; padding:0.9rem; margin-bottom:0.8rem;">
+[Llamada Cliente] ──► [IVR FreePBX] ──► [Script AGI / Middleware] ──► [JSM REST API]<br><br>
+[Zabbix / PRTG / LibreNMS] ──► [Webhook / Script] ──► [JSM REST API (Alerta NOC)]
+                                    </div>
+                                    <p style="margin:0; font-size:0.84rem; color:var(--text-muted);">
+                                        Creación automática de tickets desde la central telefónica (capturando Caller ID, opción marcada y grabación) y desde alertas de caídas de enlaces WAN, OLT/ONT o consumo elevado.
+                                    </p>
+                                </div>
+
+                                <div class="noc-arch-card">
+                                    <h5>🔒 Reglas de Gobernanza & Calidad</h5>
+                                    <ul class="styled-list" style="margin:0; font-size:0.86rem;">
+                                        <li><strong>Cierre Controlado:</strong> Ningún ticket pasa a resuelto sin documentar <em>Causa raíz</em>, <em>Acción correctiva</em> y <em>Evidencia</em>.</li>
+                                        <li><strong>Clientes sin Contrato:</strong> Detección automática y desvío inmediato al flujo de Ventas sin consumir horas técnicas del NOC.</li>
+                                        <li><strong>Auditoría de Reaperturas:</strong> Si el cliente responde durante la ventana de verificación, el ticket se reabre automáticamente.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="noc-sla-table-wrap">
+                                <table class="noc-sla-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Prioridad</th>
+                                            <th>Escenario / Impacto Operativo</th>
+                                            <th>1ra Respuesta NOC</th>
+                                            <th>Actualización</th>
+                                            <th>Tiempo Objetivo Resolución</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong style="color:#ff5630;">P1 — Crítica</strong></td>
+                                            <td>Caída total de propiedad/hotel, caída WAN general, OLT/troncal GPON o PBX completa caída</td>
+                                            <td>15 min (10m Premium 24/7)</td>
+                                            <td>Cada 30 min</td>
+                                            <td>2 horas (Calendario 24/7)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong style="color:#ffab00;">P2 — Alta</strong></td>
+                                            <td>Zona importante sin Wi-Fi, múltiples habitaciones afectadas, NVR/grupo de cámaras fuera de línea</td>
+                                            <td>20 min</td>
+                                            <td>Cada 1 hora</td>
+                                            <td>4 horas (Calendario 24/7)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong style="color:#00b8d9;">P3 — Media</strong></td>
+                                            <td>Falla parcial en habitación/AP individual, extensión PBX específica o degradación moderada</td>
+                                            <td>1 hora</td>
+                                            <td>Cada 4 horas</td>
+                                            <td>24 horas</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong style="color:#36b37e;">P4 — Baja</strong></td>
+                                            <td>Consultas técnicas, cambios menores programados, solicitudes administrativas o comerciales</td>
+                                            <td>4 a 8 horas</td>
+                                            <td>Cada 24 horas</td>
+                                            <td>48 a 96 horas laborales</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -1539,7 +2244,7 @@
                         <div class="card case-card-clickable" onclick="openCaseStudy('sitting', 'en')" role="button" tabindex="0">
                             <div>
                                 <h3>Digital Seating Chart for Weddings</h3>
-                                <span class="date-badge">Serverless | Google Apps Script</span>
+                                <span class="date-badge">Serverless | Google Apps Script</span><span class="noc-live-pill">🎬 Video Demo + 6 Screenshots</span>
                                 <p>Developed an interactive mobile web system for real-time guest management. Serverless architecture using Google Sheets as a database and Apps Script. Mobile-First frontend with JS ES6+, HTML5, and CSS3, featuring concurrency control and immutable audit logging.</p>
                             </div>
                             <div class="case-card-action">
@@ -1550,7 +2255,7 @@
                         <div class="card case-card-clickable" onclick="openCaseStudy('noc', 'en')" role="button" tabindex="0">
                             <div>
                                 <h3>NOC Service Desk - Telecom & Hospitality</h3>
-                                <span class="date-badge">Jira Service Management</span>
+                                <span class="date-badge">Jira Service Management</span><span class="noc-live-pill">🎬 5 Videos + 12 Screenshots</span>
                                 <p>Designed JSM as a Network Operations Center (NOC) to manage networks, GPON fiber, and CCTV. Implemented strict departmental escalation rules and dynamic SLAs segmented by priority (P1-P4). Multichannel REST API integration with PBX systems (FreePBX) and monitoring tools (Zabbix/PRTG).</p>
                             </div>
                             <div class="case-card-action">
@@ -1614,27 +2319,335 @@
                             <button type="button" class="btn btn-outline" onclick="closeCaseStudy('en')">✕ Close Detailed View</button>
                         </div>
 
-                        <div class="case-ComingSoon-banner">
-                            <h4>🚧 Coming Soon: Multimedia content will be uploaded here</h4>
-                            <p>We are currently preparing high-resolution screenshots, architecture diagrams, and the walkthrough video for this case study.</p>
+                        <!-- Generic Block for Upcoming Case Studies -->
+                        <div id="case-generic-en" style="display: none;">
+                            <div class="case-ComingSoon-banner">
+                                <h4>🚧 Coming Soon: Multimedia content will be uploaded here</h4>
+                                <p>We are currently preparing high-resolution screenshots, architecture diagrams, and the walkthrough video for this case study.</p>
+                            </div>
+
+                            <div class="case-media-grid">
+                                <div class="media-placeholder-box">
+                                    <div class="media-placeholder-icon">🎬</div>
+                                    <h5>Project Demo Video</h5>
+                                    <span>Coming soon: Real-time video walkthrough of the workflow & interface</span>
+                                </div>
+                                <div style="display: grid; gap: 1rem;">
+                                    <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
+                                        <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">🖼️</div>
+                                        <h5>Screenshots & UI Gallery</h5>
+                                        <span>Coming soon: Dashboards, automations, and interface screens</span>
+                                    </div>
+                                    <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
+                                        <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">📐</div>
+                                        <h5>Architecture & Workflow Diagram</h5>
+                                        <span>Coming soon: Technical schema of integrations, APIs, and rules</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="case-media-grid">
-                            <div class="media-placeholder-box">
-                                <div class="media-placeholder-icon">🎬</div>
-                                <h5>Project Demo Video</h5>
-                                <span>Coming soon: Real-time video walkthrough of the workflow & interface</span>
-                            </div>
-                            <div style="display: grid; gap: 1rem;">
-                                <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
-                                    <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">🖼️</div>
-                                    <h5>Screenshots & UI Gallery</h5>
-                                    <span>Coming soon: Dashboards, automations, and interface screens</span>
+                        <!-- Complete DIGITAL SEATING CHART Case Study Showcase (EN) -->
+                        <div id="case-sitting-en">
+                            <div class="noc-privacy-banner">
+                                <span class="shield-icon">🛡️</span>
+                                <div>
+                                    <strong>Privacy & Security Redaction:</strong> In the video walkthrough and database screenshots below, <strong>staff security PIN codes and internal test entries have been redacted</strong> to protect event credentials.
                                 </div>
-                                <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
-                                    <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">📐</div>
-                                    <h5>Architecture & Workflow Diagram</h5>
-                                    <span>Coming soon: Technical schema of integrations, APIs, and rules</span>
+                            </div>
+
+                            <h4 class="noc-section-subtitle">🎬 Live System <span>Video Walkthrough (Frontend + Google Sheets DB)</span></h4>
+                            <div class="noc-video-stage">
+                                <video id="sitting-player-en" controls preload="metadata" muted playsinline src="assets/sitting/video-demo-sitting.mp4"></video>
+                                <div class="noc-video-caption-bar">
+                                    <div>
+                                        <h5>End-to-End Walkthrough: PIN Auth, Instant Search, 2-Step Check-In & Live Cloud Sync</h5>
+                                        <p>Demonstrates staff login (with active/inactive event validation), hostess audit identification, live arrival and table seating confirmation, and instant synchronization across the 3 Google Sheets database tabs.</p>
+                                    </div>
+                                    <span class="date-badge">PINs Redacted ✓</span>
+                                </div>
+                            </div>
+
+                            <h4 class="noc-section-subtitle">📸 Mobile-First UI & <span>Serverless Database Gallery (Click to Zoom)</span></h4>
+                            <div class="noc-gallery-grid">
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/01-login-acceso-pin.png', 'Multi-Event Login Screen: validates Wedding Code, team security PIN (redacted), and automatically blocks access if the event is marked inactive')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/01-login-acceso-pin.png" alt="Sitting Digital Login" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Frontend · Security</span>
+                                        <h5>Multi-Event Access & PIN Validation</h5>
+                                        <p>Authenticates staff by event code and team PIN, automatically verifying whether the event is active before unlocking guest data.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/02-panel-recepcion-kpis.png', 'Main Reception Dashboard: Live KPIs (Total, Arrived, Seated), hostess audit identifier field, and zero-latency search by last name, first name, or table')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/02-panel-recepcion-kpis.png" alt="Reception Dashboard & KPIs" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Mobile-First UI · Real-Time</span>
+                                        <h5>Live KPI Dashboard & Instant Search</h5>
+                                        <p>Real-time counters (Total, Arrived, Seated), hostess station identification for audit logs, and instant family search from the first typed letters.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/03-control-mesas-checkin.png', 'Interactive Guest Cards with two-step confirmation: Arrival Registered (with exact timestamp) and Seated at Assigned Table')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/03-control-mesas-checkin.png" alt="2-Step Guest Check-In" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Door Operations · 2-Step Flow</span>
+                                        <h5>Arrival & Table Seating Confirmation</h5>
+                                        <p>Tracks both reception arrival and physical table seating with exact timestamps and instant global KPI updates.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/04-db-weddings-multitenant.png', 'Serverless Weddings Table in Google Sheets: multi-event control via wedding_id, nombre_evento, fecha_evento, security PIN, and active boolean flag')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/04-db-weddings-multitenant.png" alt="Weddings Table Google Sheets" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Google Sheets DB · Table 1</span>
+                                        <h5>Multi-Tenant Event Schema (<code>Weddings</code>)</h5>
+                                        <p>Manages multiple weddings or corporate events from a single deployment, enabling or disabling event access with a boolean flag.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/05-db-guests-sincronizacion.png', 'Serverless Guests Table: stores guest_id, wedding_id, guest_code (INV-01..N), first/last name, assigned table, diet notes, and arrival_at / seated_at timestamps')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/05-db-guests-sincronizacion.png" alt="Guests Table Google Sheets" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Google Sheets DB · Table 2</span>
+                                        <h5>Guest Roster & Live Status (<code>Guests</code>)</h5>
+                                        <p>Two-way synchronization of invitation codes, assigned tables, dietary notes, arrival/seated timestamps, and hostess operator ID.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/sitting/06-db-event-log-auditoria.png', 'Immutable Event_Log Table: append-only audit trail recording every state change (log_id, wedding_id, guest_id, guest_name, action, new_value, worker, and exact timestamp)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/sitting/06-db-event-log-auditoria.png" alt="Event_Log Audit Table" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Google Sheets DB · Table 3</span>
+                                        <h5>Immutable Audit Trail (<code>Event_Log</code>)</h5>
+                                        <p>Append-only history of every action performed by hostesses: who checked in or reverted a guest and at what exact second.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="noc-section-subtitle">📐 Serverless Architecture & <span>System Engineering</span></h4>
+                            <div class="noc-arch-grid">
+                                <div class="noc-arch-card">
+                                    <h5>☁️ Zero-Cost Serverless Stack</h5>
+                                    <div class="code-flow" style="font-size:0.78rem; padding:0.9rem; margin-bottom:0.8rem;">
+[Hostess Mobile (ES6+ SPA)] ──(HTTPS / google.script.run)──► [Google Apps Script Backend] ──(LockService)──► [Google Sheets DB (3 Tabs)]
+                                    </div>
+                                    <p style="margin:0; font-size:0.84rem; color:var(--text-muted);">
+                                        Deployed as a <strong>Google Apps Script</strong> Web App using <strong>Google Sheets</strong> as a lightweight relational database. Eliminates monthly VPS/database hosting fees while letting planners import guest lists directly from Excel.
+                                    </p>
+                                </div>
+
+                                <div class="noc-arch-card">
+                                    <h5>🔒 Concurrency Control (LockService)</h5>
+                                    <ul class="styled-list" style="margin:0; font-size:0.86rem;">
+                                        <li><strong>Race Condition Prevention:</strong> Server-side atomic locks ensure simultaneous check-ins from multiple hostesses never overwrite rows.</li>
+                                        <li><strong>Optimistic UI Updates:</strong> Instant visual feedback on mobile devices while the transactional write completes in the background.</li>
+                                        <li><strong>Safe Rollbacks:</strong> Allows unchecking accidental check-ins while preserving a complete audit record in <code>Event_Log</code>.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="noc-arch-card">
+                                    <h5>📱 Live Reception UX</h5>
+                                    <ul class="styled-list" style="margin:0; font-size:0.86rem;">
+                                        <li><strong>Zero-Latency Filtering:</strong> In-memory search by the first letters of a last name, guest code (<code>INV-01</code>), or table (<code>Mesa 1</code>).</li>
+                                        <li><strong>Hostess Accountability:</strong> Each device tags its operator/door (e.g., <em>Main Door, Laura</em>) for full operational traceability.</li>
+                                        <li><strong>Mobile-First Ergonomics:</strong> High-contrast touch targets engineered for fast door check-in under venue lighting conditions.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Complete NOC Case Study Showcase (EN) -->
+                        <div id="case-noc-en" style="display: none;">
+                            <div class="noc-privacy-banner">
+                                <span class="shield-icon">🛡️</span>
+                                <div>
+                                    <strong>Privacy & NDA Compliance:</strong> All screenshots and video walkthroughs below come from the live production environment, with <strong>company names, corporate domains, URLs, emails, and hotel property codes redacted</strong> to protect client confidentiality.
+                                </div>
+                            </div>
+
+                            <h4 class="noc-section-subtitle">🎬 Live Production <span>Video Walkthroughs (5 Clips)</span></h4>
+                            <div class="noc-video-tabs" id="noc-video-tabs-en">
+                                <button type="button" class="noc-video-tab active" onclick="switchNocVideo('en', 0, this)">1️⃣ Custom Workflows (14 States)</button>
+                                <button type="button" class="noc-video-tab" onclick="switchNocVideo('en', 1, this)">2️⃣ Conditional Forms & Request Types</button>
+                                <button type="button" class="noc-video-tab" onclick="switchNocVideo('en', 2, this)">3️⃣ SLA Matrix (P1-P4 & Pause Rules)</button>
+                                <button type="button" class="noc-video-tab" onclick="switchNocVideo('en', 3, this)">4️⃣ Automations & Escalation Rules</button>
+                                <button type="button" class="noc-video-tab" onclick="switchNocVideo('en', 4, this)">5️⃣ Executive NOC Dashboard</button>
+                            </div>
+
+                            <div class="noc-video-stage">
+                                <video id="noc-player-en" controls preload="metadata" muted playsinline src="assets/noc/video-workflows.mp4"></video>
+                                <div class="noc-video-caption-bar">
+                                    <div>
+                                        <h5 id="noc-video-title-en">1. Custom Workflows (14 Operational States)</h5>
+                                        <p id="noc-video-desc-en">End-to-end lifecycle from New & NOC Triage to Multi-Tier Escalation (Infrastructure, Development, Field Installations, Sales, Admin), Client Verification, and Auto-Close (+72h).</p>
+                                    </div>
+                                    <span class="date-badge">Sensitive Data Redacted ✓</span>
+                                </div>
+                            </div>
+
+                            <h4 class="noc-section-subtitle">📸 High-Resolution <span>Configuration Gallery (Click to Zoom)</span></h4>
+                            <div class="noc-gallery-grid">
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/08-flujo-trabajo-diagrama.png', 'Complete NOC Workflow Diagram in Jira Service Management (14 operational states)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/08-flujo-trabajo-diagrama.png" alt="NOC Workflow" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Workflows · 14 States</span>
+                                        <h5>NOC Workflow Architecture</h5>
+                                        <p>Full lifecycle control with L1–L5 escalation paths, SLA-pausing wait states, and automated reopening on client reply.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/01-colas-jql.png', '16 Custom JQL Queues (Unclassified, Active P1/P2, SLA Broken, Department Escalations, +72h)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/01-colas-jql.png" alt="JQL Queues" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Daily Operations · JQL</span>
+                                        <h5>16 Custom JQL Operational Queues</h5>
+                                        <p>Real-time views for NOC engineers: Unclassified, Active P1/P2, SLA Broken, Department Escalations, and Stale Tickets (+24h).</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/02-custom-fields.png', 'Custom NOC Audit Fields: Root Cause, Corrective/Preventive Action, IP/MAC/Serial, and Client Validation')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/02-custom-fields.png" alt="Custom Fields" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Data Governance</span>
+                                        <h5>Custom Technical Audit Fields</h5>
+                                        <p>Mandatory tracking for Root Cause, Corrective/Preventive Actions, Entry Channel, Miscalculated Escalations, and Affected IP/MAC/Serial.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/09-tipos-solicitud-formularios.png', '11 Dynamic Forms linked to Request Types (GPON/ONT, Wi-Fi, PBX, CCTV, WAN, NOC Alerts, and IVR)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/09-tipos-solicitud-formularios.png" alt="Dynamic Forms" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Portal & Self-Service</span>
+                                        <h5>Conditional Dynamic Forms</h5>
+                                        <p>11 specialized forms capturing exact technical diagnostics upfront (ONT serials, SSID/APs, PBX extensions, NVR/CCTV channels).</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/10-solicitudes-incidentes.png', 'Structured Incident & Service Request catalog in Jira Service Management')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/10-solicitudes-incidentes.png" alt="Incident Types" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">ITSM Catalog</span>
+                                        <h5>Incidents & Service Requests</h5>
+                                        <p>Clear separation between network incidents (Wi-Fi, GPON, PBX, CCTV, WAN, Monitoring Alerts) and service/commercial requests.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/11-configuracion-sla.png', 'SLA Matrix by Priority (Highest 15m, High 20m, Medium 1h, Low 8h) and 24/7 vs 9-5 Calendars')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/11-configuracion-sla.png" alt="SLA Configuration" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Dynamic SLAs · 24/7</span>
+                                        <h5>SLA Engine & Pause Conditions</h5>
+                                        <p>Strict first-response and resolution targets that automatically pause when waiting on client info or third-party hardware vendors.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/12-dashboard-metricas.png', 'Executive NOC Dashboard tracking ticket statuses, priorities, escalations, and resolution times')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/12-dashboard-metricas.png" alt="NOC Dashboard" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">KPIs & Analytics</span>
+                                        <h5>Executive NOC Operations Dashboard</h5>
+                                        <p>Real-time visibility into open/resolved tickets, active P1/P2 incidents, departmental escalations, and inactivity closures.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/03-mensaje-bienvenida.png', 'Automated Welcome & Tracking Notification sent to clients upon ticket creation (Sensitive data redacted)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/03-mensaje-bienvenida.png" alt="Welcome Message Redacted" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Communication · Redacted</span>
+                                        <h5>Automated Client Welcome Message</h5>
+                                        <p>Instant confirmation with ticket key, case summary, and customer portal tracking link (all client data redacted).</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/04-regla-cierre-inactividad.png', 'Scheduled Automation: Auto-close tickets after 3 days (+72h) of client inactivity')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/04-regla-cierre-inactividad.png" alt="Inactivity Auto-Close" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Automation · +72h</span>
+                                        <h5>3-Day Inactivity Auto-Closure</h5>
+                                        <p>Automatically closes tickets waiting on client verification or info for 3+ days after posting a public notification comment.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/05-regla-enrutamiento-dominio.png', 'Automated Organization Routing based on reporter email domain (Client domains redacted)')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/05-regla-enrutamiento-dominio.png" alt="Domain Routing" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Automation · Email Domain</span>
+                                        <h5>Organization Routing by Email Domain</h5>
+                                        <p>Evaluates the reporter email domain on incoming tickets and assigns the corresponding corporate/hotel Organization in JSM.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/06-regla-enrutamiento-siglas.png', 'Automated Organization & Corporate Request Participant assignment via property acronyms in Summary')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/06-regla-enrutamiento-siglas.png" alt="Acronym Routing" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Automation · Acronyms</span>
+                                        <h5>Property Acronym & Participant Routing</h5>
+                                        <p>Scans ticket summaries for property codes to set the Organization and automatically add corporate supervisors as Request Participants.</p>
+                                    </div>
+                                </div>
+
+                                <div class="noc-shot-card" onclick="openLightbox('assets/noc/07-regla-enrutamiento-portal.png', 'Automated Organization mapping based on customer selection in the Portal Form')">
+                                    <div class="noc-shot-thumb-wrap">
+                                        <img src="assets/noc/07-regla-enrutamiento-portal.png" alt="Portal Routing" loading="lazy">
+                                        <span class="noc-shot-zoom-badge">🔍 Zoom</span>
+                                    </div>
+                                    <div class="noc-shot-body">
+                                        <span class="noc-shot-tag">Automation · Portal</span>
+                                        <h5>Portal Form → Organization Sync</h5>
+                                        <p>Maps the property selected by the user in the portal form dropdown directly to the native JSM Organization field.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1982,6 +2995,7 @@
         };
 
         function openCaseStudy(caseKey, lang) {
+            switchView('portfolio', true);
             const l = lang === 'en' ? 'en' : 'es';
             const data = caseStudiesData[caseKey] && caseStudiesData[caseKey][l];
             if (!data) return;
@@ -1991,14 +3005,29 @@
             document.getElementById('case-title-' + l).textContent = data.title;
             document.getElementById('case-desc-' + l).textContent = data.desc;
 
+            const genericBlock = document.getElementById('case-generic-' + l);
+            const sittingBlock = document.getElementById('case-sitting-' + l);
+            const nocBlock = document.getElementById('case-noc-' + l);
+
+            const pNoc = document.getElementById('noc-player-' + l);
+            const pSit = document.getElementById('sitting-player-' + l);
+            if (pNoc && caseKey !== 'noc') pNoc.pause();
+            if (pSit && caseKey !== 'sitting') pSit.pause();
+
+            if (genericBlock && sittingBlock && nocBlock) {
+                sittingBlock.style.display = (caseKey === 'sitting') ? 'block' : 'none';
+                nocBlock.style.display = (caseKey === 'noc') ? 'block' : 'none';
+                genericBlock.style.display = (caseKey !== 'sitting' && caseKey !== 'noc') ? 'block' : 'none';
+            }
+
             panel.querySelectorAll('.case-pill-btn').forEach(btn => {
                 btn.classList.toggle('active', btn.getAttribute('data-case') === caseKey);
             });
 
             panel.classList.add('open');
             setTimeout(() => {
-                panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 40);
+                panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 50);
         }
 
         function closeCaseStudy(lang) {
@@ -2015,5 +3044,116 @@
         applyLanguage(document.documentElement.lang === 'en' ? 'en' : 'es');
         document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });
     </script>
+
+    <!-- Lightbox Modal para ampliar capturas -->
+    <div id="noc-lightbox" class="noc-lightbox" onclick="closeLightbox(event)">
+        <button type="button" class="noc-lightbox-close" onclick="closeLightbox(event)">✕ Cerrar / Close (ESC)</button>
+        <img id="noc-lightbox-img" class="noc-lightbox-img" src="" alt="Captura Ampliada">
+        <div id="noc-lightbox-caption" class="noc-lightbox-caption"></div>
+    </div>
+
+    <script>
+        const nocVideosMeta = {
+            es: [
+                {
+                    src: 'assets/noc/video-workflows.mp4',
+                    title: '1. Flujos de Trabajo Personalizados (14 Estados Operativos)',
+                    desc: 'Esquema de estados desde Nuevo y Clasificación NOC hasta Escalamiento Multi-Nivel (Infraestructura, Desarrollo, Instalaciones, Ventas, Administración), Validación del Cliente y Cierre Automático (+72h).'
+                },
+                {
+                    src: 'assets/noc/video-formularios.mp4',
+                    title: '2. Formularios Dinámicos con Condicionales & 11 Tipos de Solicitud',
+                    desc: 'Recorrido por la clasificación de Incidentes, Solicitudes de Servicio y los 11 formularios dinámicos (Alerta NOC, GPON/ONT, Wi-Fi, PBX, CCTV, WAN, IVR) con datos del cliente censurados.'
+                },
+                {
+                    src: 'assets/noc/video-slas.mp4',
+                    title: '3. Configuración de SLAs (P1–P4, Calendarios 24/7 y Condiciones de Pausa)',
+                    desc: 'Metas de primera respuesta (15m P1 / 20m P2 / 1h P3) y resolución (2h P1 / 4h P2), con pausa automática en estados de espera de cliente o proveedor.'
+                },
+                {
+                    src: 'assets/noc/video-automatizaciones.mp4',
+                    title: '4. Reglas de Automatización, Escalamiento Departamental y Alertas SLA',
+                    desc: 'Reglas activas para asignación automática, notificaciones por departamento escalado, recordatorios al cliente y alertas preventivas antes de incumplir SLA.'
+                },
+                {
+                    src: 'assets/noc/video-dashboard.mp4',
+                    title: '5. Dashboard Ejecutivo NOC en Tiempo Real',
+                    desc: 'Métricas operativas de tickets por estado, prioridad (P1/P2 activos), escalamientos departamentales, tiempos promedio en cada estado y auditoría de casos mal escalados.'
+                }
+            ],
+            en: [
+                {
+                    src: 'assets/noc/video-workflows.mp4',
+                    title: '1. Custom Workflows (14 Operational States)',
+                    desc: 'End-to-end lifecycle from New & NOC Triage to Multi-Tier Escalation (Infrastructure, Development, Field Installations, Sales, Admin), Client Verification, and Auto-Close (+72h).'
+                },
+                {
+                    src: 'assets/noc/video-formularios.mp4',
+                    title: '2. Conditional Dynamic Forms & 11 Request Types',
+                    desc: 'Walkthrough of Incident/Service Request categories and the 11 conditional forms (NOC Monitoring Alert, GPON/ONT, Wi-Fi, PBX, CCTV, WAN, IVR) with client data redacted.'
+                },
+                {
+                    src: 'assets/noc/video-slas.mp4',
+                    title: '3. SLA Configuration (P1–P4, 24/7 Calendars & Pause Conditions)',
+                    desc: 'First-response (15m P1 / 20m P2 / 1h P3) and resolution targets (2h P1 / 4h P2) with automatic SLA pausing when waiting on client or vendor.'
+                },
+                {
+                    src: 'assets/noc/video-automatizaciones.mp4',
+                    title: '4. Automation Rules, Departmental Escalation & SLA Alerts',
+                    desc: 'Automated ticket routing, department escalation notifications, client follow-up reminders, and proactive SLA breach warnings.'
+                },
+                {
+                    src: 'assets/noc/video-dashboard.mp4',
+                    title: '5. Real-Time Executive NOC Dashboard',
+                    desc: 'Live operational KPIs tracking tickets by status, priority (active P1/P2), departmental escalations, average time in status, and miscalculated escalations.'
+                }
+            ]
+        };
+
+        function switchNocVideo(lang, index, btnEl) {
+            const l = lang === 'en' ? 'en' : 'es';
+            const list = nocVideosMeta[l];
+            if (!list || !list[index]) return;
+
+            const tabsWrap = document.getElementById('noc-video-tabs-' + l);
+            if (tabsWrap) {
+                tabsWrap.querySelectorAll('.noc-video-tab').forEach(b => b.classList.remove('active'));
+            }
+            if (btnEl) btnEl.classList.add('active');
+
+            const player = document.getElementById('noc-player-' + l);
+            const titleEl = document.getElementById('noc-video-title-' + l);
+            const descEl = document.getElementById('noc-video-desc-' + l);
+
+            if (titleEl) titleEl.textContent = list[index].title;
+            if (descEl) descEl.textContent = list[index].desc;
+            if (player) {
+                player.src = list[index].src;
+                player.load();
+                player.play().catch(() => {});
+            }
+        }
+
+        function openLightbox(src, caption) {
+            const modal = document.getElementById('noc-lightbox');
+            const img = document.getElementById('noc-lightbox-img');
+            const cap = document.getElementById('noc-lightbox-caption');
+            if (!modal || !img) return;
+            img.src = src;
+            if (cap) cap.textContent = caption || '';
+            modal.classList.add('open');
+        }
+
+        function closeLightbox(e) {
+            if (e && e.target && e.target.id === 'noc-lightbox-img') return;
+            const modal = document.getElementById('noc-lightbox');
+            if (modal) modal.classList.remove('open');
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
 </body>
 </html>

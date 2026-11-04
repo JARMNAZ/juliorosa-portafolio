@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julio Rosa | Portafolio & Novedades @juliorosa.tech</title>
+    <meta name="description" content="Julio Rosa – Administrador Atlassian (Jira, Jira Service Management, Confluence), consultor IT y creador tech en @juliorosa.tech. Portafolio profesional, guías extendidas y documentación técnica.">
+    <meta name="author" content="Julio Rosa">
+    <link rel="canonical" href="https://jarmnaz.github.io/juliorosa-portafolio/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0f1013">
+
+    <!-- Vista previa al compartir (LinkedIn, WhatsApp, Instagram, X) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Julio Rosa Tech">
+    <meta property="og:title" content="Julio Rosa | Portafolio & Novedades @juliorosa.tech">
+    <meta property="og:description" content="Administrador Atlassian, Consultor IT y documentación extendida de @juliorosa.tech (IA, MCP, APIs, n8n y automatización).">
+    <meta property="og:url" content="https://jarmnaz.github.io/juliorosa-portafolio/">
+    <meta property="og:image" content="https://jarmnaz.github.io/juliorosa-portafolio/julio-rosa.jpg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:alt" content="Foto de Julio Rosa">
+    <meta property="og:locale" content="es_DO">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Julio Rosa | Portafolio & Novedades @juliorosa.tech">
+    <meta name="twitter:description" content="Administrador Atlassian, Consultor IT y documentación extendida de @juliorosa.tech.">
+    <meta name="twitter:image" content="https://jarmnaz.github.io/juliorosa-portafolio/julio-rosa.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Julio Rosa",
+        "jobTitle": "Atlassian Administrator & IT Consultant",
+        "url": "https://jarmnaz.github.io/juliorosa-portafolio/",
+        "image": "https://jarmnaz.github.io/juliorosa-portafolio/julio-rosa.jpg",
+        "worksFor": { "@type": "Organization", "name": "Delivery Hero (PedidosYa)" },
+        "address": { "@type": "PostalAddress", "addressCountry": "DO" },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Instituto Tecnológico de Las Américas (ITLA)" },
+            { "@type": "CollegeOrUniversity", "name": "Universidad del Caribe (UNICARIBE)" }
+        ],
+        "knowsAbout": ["Jira Software", "Jira Service Management", "Confluence", "ITSM", "n8n", "REST APIs", "MCP", "AI Automation"],
+        "sameAs": [
+            "https://www.linkedin.com/in/julio-rosa-tech/",
+            "https://www.instagram.com/juliorosa.tech/",
+            "https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf"
+        ]
+    }
+    </script>
+
+    <!-- Aplica el idioma guardado (o el del navegador) antes de pintar la página -->
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('lang'); } catch (e) {}
+            var lang = saved || ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+            document.documentElement.lang = lang;
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f1013;
+            --bg-card: #1a1c23;
+            --bg-elevated: #22252f;
+            --accent: #ccff00;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --ig-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ================= TOP NAVBAR & DROPDOWN MENU ================= */
+        .site-navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1500;
+            background-color: rgba(15, 16, 19, 0.90);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 0.85rem 0;
+        }
+
+        .navbar-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .brand-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            box-shadow: 0 0 10px var(--accent);
+        }
+
+        .brand-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent);
+            background-color: rgba(204, 255, 0, 0.12);
+            border: 1px solid rgba(204, 255, 0, 0.3);
+            padding: 0.15rem 0.55rem;
+            border-radius: 12px;
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        /* Dropdown Menu Container */
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .nav-tab-btn {
+            background-color: var(--bg-card);
+            color: var(--text-main);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            padding: 0.55rem 1.15rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.25s ease;
+        }
+
+        .nav-tab-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .nav-tab-btn.active {
+            background-color: var(--accent);
+            color: var(--bg-dark);
+            border-color: var(--accent);
+            box-shadow: 0 4px 16px rgba(204, 255, 0, 0.22);
+        }
+
+        .nav-badge-new {
+            background-color: #ff2a5f;
+            color: #ffffff;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 0.1rem 0.45rem;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .nav-tab-btn.active .nav-badge-new {
+            background-color: var(--bg-dark);
+            color: var(--accent);
+        }
+
+        .dropdown-caret {
+            font-size: 0.7rem;
+            opacity: 0.8;
+            transition: transform 0.2s ease;
+        }
+
+        .nav-dropdown:hover .dropdown-caret,
+        .nav-dropdown.open .dropdown-caret {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 0.5rem);
+            left: 0;
+            min-width: 260px;
+            background-color: var(--bg-card);
+            border: 1px solid rgba(204, 255, 0, 0.28);
+            border-radius: 16px;
+            padding: 0.6rem;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-6px);
+            transition: all 0.2s ease;
+            z-index: 2000;
+        }
+
+        /* Puente invisible para que el ratón no pierda el hover */
+        .nav-dropdown::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 0.6rem;
+        }
+
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-dropdown:focus-within .dropdown-menu,
+        .nav-dropdown.open .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a,
+        .dropdown-menu button {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            width: 100%;
+            text-align: left;
+            background: transparent;
+            border: none;
+            color: var(--text-main);
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.86rem;
+            font-weight: 500;
+            padding: 0.55rem 0.8rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .dropdown-menu a:hover,
+        .dropdown-menu button:hover {
+            background-color: rgba(204, 255, 0, 0.12);
+            color: var(--accent);
+        }
+
+        .dropdown-divider {
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.08);
+            margin: 0.35rem 0;
+        }
+
+        #lang-toggle-btn {
+            background-color: var(--bg-card);
+            color: var(--text-main);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        #lang-toggle-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* --- View Switching (Portafolio vs Novedades) --- */
+        body[data-view="novedades"] .view-portfolio {
+            display: none !important;
+        }
+        body:not([data-view="novedades"]) .view-novedades {
+            display: none !important;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4.5rem 0 5rem;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .hero-text { flex: 1; min-width: 300px; }
+        .hero-text h3 { color: var(--text-muted); font-weight: 400; margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .hero-text h1 { font-size: 4rem; margin: 0; line-height: 1.1; color: var(--accent); }
+        .hero-text h2 { font-size: 1.8rem; margin: 1rem 0; font-weight: 600; }
+        .hero-text p { color: var(--text-muted); max-width: 550px; margin-bottom: 2rem; font-size: 1.05rem; }
+
+        .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .btn { display: inline-block; background-color: var(--accent); color: var(--bg-dark); padding: 0.8rem 1.8rem; border-radius: 30px; text-decoration: none; font-weight: 700; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 2px solid var(--accent); cursor: pointer; font-family: 'Poppins', sans-serif; font-size: 0.95rem; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(204, 255, 0, 0.2); }
+        .btn-outline { background-color: transparent; color: var(--accent); }
+        .btn-outline:hover { background-color: rgba(204, 255, 0, 0.1); }
+        
+        .btn-linkedin { background-color: #0077b5; color: white; border-color: #0077b5; }
+        .btn-linkedin:hover { box-shadow: 0 10px 20px rgba(0, 119, 181, 0.3); color: white; }
+        .btn-whatsapp { background-color: #25D366; color: white; border-color: #25D366; }
+        .btn-whatsapp:hover { box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); color: white; }
+        .btn-instagram { background: var(--ig-gradient); color: white; border: none; padding: calc(0.8rem + 2px) calc(1.8rem + 2px); }
+        .btn-instagram:hover { box-shadow: 0 10px 22px rgba(220, 39, 67, 0.35); color: white; }
+
+        /* --- Teaser Banner inside Portfolio to jump to Novedades --- */
+        .novedades-teaser {
+            background: linear-gradient(135deg, rgba(204, 255, 0, 0.12) 0%, rgba(26, 28, 35, 0.95) 65%);
+            border: 1px solid rgba(204, 255, 0, 0.35);
+            border-radius: 20px;
+            padding: 1.6rem 2.2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .novedades-teaser-text h3 {
+            margin: 0 0 0.3rem;
+            color: var(--accent);
+            font-size: 1.25rem;
+        }
+        .novedades-teaser-text p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* --- Profile Image --- */
+        .hero-image { flex: 1; display: flex; justify-content: center; position: relative; }
+        .image-wrapper { position: relative; width: 350px; height: 350px; border-radius: 50%; background: linear-gradient(45deg, var(--bg-card), var(--accent)); padding: 5px; }
+        .image-wrapper img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; background-color: var(--bg-dark); }
+
+        /* --- Sections & Grid --- */
+        section { padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.05); }
+        .section-title { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
+        .section-title span { color: var(--accent); }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+        .card { background-color: var(--bg-card); padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border: 1px solid transparent; }
+        .card:hover { transform: translateY(-5px); border-color: rgba(204, 255, 0, 0.3); }
+        .card h3 { color: var(--text-main); margin-top: 0; font-size: 1.3rem; }
+        .card h3.service-title { color: var(--accent); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.8rem; margin-bottom: 1.2rem; }
+        .card p, .card li { color: var(--text-muted); font-size: 0.95rem; }
+        .card .btn { margin-top: 0.5rem; font-size: 0.9rem; padding: 0.6rem 1.4rem; }
+        .date-badge { display: inline-block; background-color: rgba(204,255,0,0.1); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem; }
+
+        ul.styled-list { list-style: none; padding-left: 0; }
+        ul.styled-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem; }
+        ul.styled-list li::before { content: '✔'; color: var(--accent); position: absolute; left: 0; font-size: 0.9rem; }
+
+        /* --- Project/Experience Cards (Full Width) --- */
+        .full-card { background-color: var(--bg-card); padding: 3rem; border-radius: 20px; margin-bottom: 2rem; border: 1px solid transparent; transition: transform 0.3s ease; }
+        .full-card:hover { transform: translateY(-5px); border-color: rgba(204, 255, 0, 0.3); }
+        .full-card h3 { font-size: 1.6rem; color: var(--accent); margin-bottom: 0.5rem; margin-top: 0; }
+        .subtitle { color: var(--text-main); font-weight: 600; margin-bottom: 0.5rem; display: block; font-size: 1.1rem; }
+        .company { color: var(--text-muted); font-style: italic; margin-bottom: 1.5rem; display: block; }
+
+        /* ================= NOVEDADES / JULIO ROSA TECH HUB ================= */
+        .tech-hub-hero {
+            padding: 3.5rem 0 2.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .ig-profile-card {
+            background: linear-gradient(145deg, var(--bg-card) 0%, #14161d 100%);
+            border: 1px solid rgba(204, 255, 0, 0.25);
+            border-radius: 24px;
+            padding: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .ig-profile-left {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .ig-avatar-ring {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--ig-gradient);
+            padding: 3px;
+            flex-shrink: 0;
+        }
+
+        .ig-avatar-ring img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--bg-dark);
+        }
+
+        .ig-handle-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.3rem;
+        }
+
+        .ig-handle {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin: 0;
+        }
+
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: #0095f6;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .ig-bio-summary {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0.3rem 0 0.8rem;
+            max-width: 600px;
+        }
+
+        .ig-highlights-row {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .ig-highlight-chip {
+            background-color: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--text-main);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Filter pills */
+        .filter-bar {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin: 2.5rem 0 2rem;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            background-color: var(--bg-card);
+            color: var(--text-muted);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 0.5rem 1.2rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: rgba(204, 255, 0, 0.14);
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        /* Post & Documentation Cards */
+        .post-article-card {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 22px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .post-article-card:hover {
+            border-color: rgba(204, 255, 0, 0.35);
+        }
+
+        .post-meta-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .post-type-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background-color: rgba(204, 255, 0, 0.12);
+            color: var(--accent);
+            padding: 0.3rem 0.85rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .post-type-badge.reel {
+            background: rgba(220, 39, 67, 0.16);
+            color: #ff6b8b;
+            border: 1px solid rgba(220, 39, 67, 0.35);
+        }
+
+        .post-article-card h3 {
+            font-size: 1.65rem;
+            color: var(--text-main);
+            margin: 0 0 0.75rem;
+            line-height: 1.3;
+        }
+
+        .post-summary {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Visual Diagram Grid inside API + MCP post */
+        .concept-trio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .concept-box {
+            background-color: var(--bg-elevated);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-left: 4px solid var(--accent);
+            border-radius: 14px;
+            padding: 1.25rem;
+        }
+
+        .concept-box h4 {
+            margin: 0 0 0.4rem;
+            color: var(--accent);
+            font-size: 1.05rem;
+        }
+
+        .concept-box p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Expandable Long-form Documentation Drawer */
+        .doc-Toggle-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.2rem;
+        }
+
+        .doc-content-drawer {
+            display: none;
+            margin-top: 1.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+        }
+
+        .doc-content-drawer.open {
+            display: block;
+            animation: fadeInDoc 0.25s ease;
+        }
+
+        @keyframes fadeInDoc {
+            from { opacity: 0; transform: translateY(-6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .doc-content-drawer h4 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin: 1.4rem 0 0.6rem;
+        }
+
+        .doc-content-drawer h4:first-child {
+            margin-top: 0;
+        }
+
+        .doc-content-drawer p,
+        .doc-content-drawer li {
+            color: #d2d6e0;
+            font-size: 0.95rem;
+        }
+
+        .doc-callout {
+            background-color: rgba(204, 255, 0, 0.08);
+            border: 1px solid rgba(204, 255, 0, 0.28);
+            border-radius: 14px;
+            padding: 1.1rem 1.4rem;
+            margin: 1.2rem 0;
+            font-size: 0.92rem;
+            color: var(--text-main);
+        }
+
+        .code-flow {
+            background-color: #0b0c0e;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            font-family: Consolas, Monaco, monospace;
+            font-size: 0.88rem;
+            color: var(--accent);
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        /* ================= CASE STUDY INTERACTIVE CARDS & DETAIL SHOWCASE ================= */
+        .case-card-clickable {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .case-card-clickable:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 28px rgba(204, 255, 0, 0.12);
+        }
+
+        .case-card-action {
+            margin-top: 1.4rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .case-detail-panel {
+            display: none;
+            margin-top: 2.5rem;
+            background: linear-gradient(145deg, var(--bg-card) 0%, #14161d 100%);
+            border: 2px solid var(--accent);
+            border-radius: 24px;
+            padding: 2.8rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            animation: fadeInDoc 0.3s ease;
+        }
+
+        .case-detail-panel.open {
+            display: block;
+        }
+
+        .case-detail-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .case-detail-header h3 {
+            font-size: 1.9rem;
+            color: var(--accent);
+            margin: 0.4rem 0 0.5rem;
+        }
+
+        .case-ComingSoon-banner {
+            background: rgba(204, 255, 0, 0.10);
+            border: 1.5px dashed var(--accent);
+            border-radius: 18px;
+            padding: 1.8rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .case-ComingSoon-banner h4 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin: 0 0 0.5rem;
+        }
+
+        .case-ComingSoon-banner p {
+            color: var(--text-main);
+            margin: 0;
+            font-size: 0.98rem;
+        }
+
+        .case-media-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .media-placeholder-box {
+            background-color: #111318;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            min-height: 230px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 0.6rem;
+        }
+
+        .media-placeholder-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background-color: rgba(204, 255, 0, 0.14);
+            border: 1px solid rgba(204, 255, 0, 0.4);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .media-placeholder-box h5 {
+            margin: 0;
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .media-placeholder-box span {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .case-selector-pills {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-pill-btn {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 0.4rem 0.95rem;
+            border-radius: 999px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .case-pill-btn:hover,
+        .case-pill-btn.active {
+            background-color: var(--accent);
+            color: var(--bg-dark);
+            border-color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .case-media-grid { grid-template-columns: 1fr; }
+            .case-detail-panel { padding: 1.6rem; }
+        }
+
+        /* --- Contact --- */
+        .contact-box { background-color: var(--accent); color: var(--bg-dark); padding: 3rem; border-radius: 20px; text-align: center; }
+        .contact-box h2 { margin-top: 0; font-size: 2.5rem; }
+        .contact-box p { font-weight: 600; margin-bottom: 2rem; }
+        .contact-box .btn { background-color: var(--bg-dark); color: var(--accent); border: none; margin: 0.5rem; }
+        .contact-box .btn:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+        .contact-box .btn-whatsapp-alt { background-color: var(--bg-dark); color: #25D366; border: 2px solid #25D366; }
+        .contact-box .contact-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+        .contact-link { color: var(--bg-dark); font-weight: 700; }
+
+        /* --- Footer --- */
+        .site-footer { border-top: 1px solid rgba(255,255,255,0.05); padding: 2rem 0; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
+        .site-footer a { color: var(--text-muted); margin: 0 0.6rem; }
+        .site-footer a:hover { color: var(--accent); }
+
+        /* --- Idioma: solo se muestra el bloque del idioma activo --- */
+        html[lang="en"] #content-es, html[lang="en"] .footer-es, html[lang="en"] .nav-es { display: none !important; }
+        html:not([lang="en"]) #content-en, html:not([lang="en"]) .footer-en, html:not([lang="en"]) .nav-en { display: none !important; }
+
+        /* --- Accesibilidad --- */
+        html { scroll-behavior: smooth; }
+        a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+        .contact-box a:focus-visible, .contact-box button:focus-visible { outline-color: var(--bg-dark); }
+        .skip-link { position: absolute; left: 1rem; top: -4rem; background: var(--accent); color: var(--bg-dark); padding: 0.6rem 1rem; border-radius: 10px; font-weight: 700; z-index: 2000; }
+        .skip-link:focus { top: 1rem; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition: none !important; animation: none !important; }
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 3rem; }
+            .hero { text-align: center; justify-content: center; padding: 3rem 0; }
+            .btn-group { justify-content: center; }
+            .full-card, .post-article-card, .ig-profile-card { padding: 1.75rem; }
+            .navbar-inner { justify-content: center; }
+            .dropdown-menu { left: 50%; transform: translateX(-50%) translateY(-6px); }
+            .nav-dropdown:hover .dropdown-menu,
+            .nav-dropdown.open .dropdown-menu { transform: translateX(-50%) translateY(0); }
+        }
+    </style>
+</head>
+<body data-view="portfolio">
+    <a href="#main" class="skip-link">Saltar al contenido / Skip to content</a>
+
+    <!-- ================= BARRA DE NAVEGACIÓN CON MENÚS DESPLEGABLES ================= -->
+    <header class="site-navbar">
+        <div class="navbar-inner">
+            <a href="#top" class="brand-logo" onclick="switchView('portfolio'); return false;">
+                <span class="brand-dot"></span>
+                <span>Julio Rosa</span>
+                <span class="brand-tag">@juliorosa.tech</span>
+            </a>
+
+            <!-- Controles en Español -->
+            <div class="nav-controls nav-es">
+                <!-- Menú Desplegable 1: Mi Portafolio -->
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-tab-btn tab-portfolio active" onclick="switchView('portfolio')">
+                        💼 Mi Portafolio <span class="dropdown-caret">▼</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <button type="button" onclick="goToSection('portfolio', 'top')">👤 Sobre Mí (Inicio)</button>
+                        <button type="button" onclick="goToSection('portfolio', 'experience-es')">🏢 Trayectoria Profesional</button>
+                        <button type="button" onclick="goToSection('portfolio', 'services-es')">⚙️ Mis Servicios (Lo que Hago)</button>
+                        <button type="button" onclick="goToSection('portfolio', 'projects-es')">🚀 Casos de Estudio</button>
+                        <button type="button" onclick="goToSection('portfolio', 'education-es')">🎓 Educación & Certificaciones</button>
+                        <div class="dropdown-divider"></div>
+                        <button type="button" onclick="goToSection('portfolio', 'contact-es')">✉️ Contacto Directo</button>
+                    </div>
+                </div>
+
+                <!-- Menú Desplegable 2: Últimas Novedades Julio Rosa Tech -->
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-tab-btn tab-novedades" onclick="switchView('novedades')">
+                        ⚡ Últimas Novedades · Julio Rosa Tech
+                        <span class="nav-badge-new">IG Docs</span>
+                        <span class="dropdown-caret">▼</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <button type="button" onclick="goToArticle('post-gemini-es', 'doc-gemini-es')">🎓 Guía: Gemini Gratis + 5 TB + YT Premium</button>
+                        <button type="button" onclick="goToArticle('post-mcp-es', 'doc-mcp-es')">🔌 Guía: ¿Qué es API + MCP? (Documentación)</button>
+                        <button type="button" onclick="goToArticle('post-intro-es', 'doc-intro-es')">🎬 Ep. 01: Intro @juliorosa.tech</button>
+                        <div class="dropdown-divider"></div>
+                        <a href="https://www.instagram.com/juliorosa.tech/" target="_blank" rel="noopener noreferrer">📸 Ir a Instagram @juliorosa.tech ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles en Inglés -->
+            <div class="nav-controls nav-en">
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-tab-btn tab-portfolio active" onclick="switchView('portfolio')">
+                        💼 My Portfolio <span class="dropdown-caret">▼</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <button type="button" onclick="goToSection('portfolio', 'top')">👤 About Me (Home)</button>
+                        <button type="button" onclick="goToSection('portfolio', 'experience-en')">🏢 Professional Experience</button>
+                        <button type="button" onclick="goToSection('portfolio', 'services-en')">⚙️ What I Do (Services)</button>
+                        <button type="button" onclick="goToSection('portfolio', 'projects-en')">🚀 Case Studies</button>
+                        <button type="button" onclick="goToSection('portfolio', 'education-en')">🎓 Education & Certifications</button>
+                        <div class="dropdown-divider"></div>
+                        <button type="button" onclick="goToSection('portfolio', 'contact-en')">✉️ Contact Me</button>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-tab-btn tab-novedades" onclick="switchView('novedades')">
+                        ⚡ Latest Updates · Julio Rosa Tech
+                        <span class="nav-badge-new">IG Docs</span>
+                        <span class="dropdown-caret">▼</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <button type="button" onclick="goToArticle('post-gemini-en', 'doc-gemini-en')">🎓 Guide: Free Gemini + 5 TB + YT Premium</button>
+                        <button type="button" onclick="goToArticle('post-mcp-en', 'doc-mcp-en')">🔌 Guide: What is API + MCP? (Full Docs)</button>
+                        <button type="button" onclick="goToArticle('post-intro-en', 'doc-intro-en')">🎬 Ep. 01: Intro @juliorosa.tech</button>
+                        <div class="dropdown-divider"></div>
+                        <a href="https://www.instagram.com/juliorosa.tech/" target="_blank" rel="noopener noreferrer">📸 Visit Instagram @juliorosa.tech ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón de Idioma -->
+            <button id="lang-toggle-btn" type="button" onclick="toggleLanguage()" aria-label="Switch to English">EN</button>
+        </div>
+    </header>
+
+    <main id="main">
+    <div id="top"></div>
+
+    <!-- ================= CONTENIDO EN ESPAÑOL ================= -->
+    <div id="content-es" lang="es">
+        <div class="container">
+
+            <!-- ==================== VISTA 1: MI PORTAFOLIO (ES) ==================== -->
+            <div class="view-portfolio">
+                <!-- Hero Section -->
+                <header class="hero">
+                    <div class="hero-text">
+                        <h3>Hola, soy</h3>
+                        <h1>Julio Rosa</h1>
+                        <h2>Atlassian Administrator & IT Consultant</h2>
+                        <p>Consultor IT y Tecnólogo en Seguridad de la Información con más de 5 años de experiencia. Especialista en la suite Atlassian (Jira/Confluence), soporte empresarial nivel Senior, ciberseguridad corporativa e integraciones automatizadas (n8n, APIs). Ayudo a escalar operaciones tecnológicas eliminando el ruido operativo.</p>
+                        
+                        <div class="btn-group">
+                            <a href="#services-es" class="btn">Mis Servicios</a>
+                            <button type="button" onclick="switchView('novedades')" class="btn btn-outline">⚡ Novedades @juliorosa.tech</button>
+                            <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">WhatsApp</a>
+                            <a href="https://www.linkedin.com/in/julio-rosa-tech/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">LinkedIn</a>
+                            <a href="https://www.instagram.com/juliorosa.tech/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">Instagram</a>
+                            <a href="julio-rosa-cv.pdf" target="_blank" rel="noopener" class="btn btn-outline" download="Julio-Rosa-CV.pdf">Descargar CV (inglés)</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <img src="julio-rosa.jpg" alt="Julio Rosa - Atlassian Administrator" width="400" height="400" fetchpriority="high">
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Banner de acceso rápido a las guías de Instagram -->
+                <div class="novedades-teaser">
+                    <div class="novedades-teaser-text">
+                        <h3>📲 ¿Vienes desde mi Instagram @juliorosa.tech?</h3>
+                        <p>Lee la documentación extensa, diagramas de API + MCP y el paso a paso de mis últimos Reels y publicaciones.</p>
+                    </div>
+                    <button type="button" class="btn" onclick="switchView('novedades')">Ver Últimas Novedades & Guías →</button>
+                </div>
+
+                <!-- Experiencia Laboral -->
+                <section id="experience-es">
+                    <h2 class="section-title">Trayectoria <span>Profesional</span></h2>
+                    <div class="full-card">
+                        <h3>Internal IT Support Sr Analyst | Atlassian Administrator</h3>
+                        <span class="company">Delivery Hero (PedidosYa) · República Dominicana | Marzo 2025 - Presente</span>
+                        <p>Administración integral de la suite Atlassian para operaciones a gran escala en LATAM. Mentoría a equipos técnicos y optimización de infraestructura IT.</p>
+                        <ul class="styled-list">
+                            <li>Diseño, configuración y gobernanza de proyectos de alta criticidad en Jira Software y Jira Service Management.</li>
+                            <li>Desarrollo de scripts y automatizaciones avanzadas multiplataforma (n8n, APIs REST) para integrar Jira con el core del negocio.</li>
+                            <li>Gestión avanzada de seguridad, cumplimiento y rendimiento de la plataforma Atlassian.</li>
+                            <li>Soporte estratégico a proyectos interdepartamentales, mejorando la trazabilidad y eficiencia (SLAs, Workflows).</li>
+                        </ul>
+                    </div>
+                    <div class="full-card">
+                        <h3>Internal IT Support Analyst</h3>
+                        <span class="company">Delivery Hero (PedidosYa) · República Dominicana | Agosto 2021 - Marzo 2025</span>
+                        <p>Soporte técnico remoto a más de 14 países en LATAM, gestionando identidad, redes y ciberseguridad corporativa.</p>
+                        <ul class="styled-list">
+                            <li>Administración de Google Workspace, Office 365, Okta SSO y JumpCloud.</li>
+                            <li>Despliegue y administración de ciberseguridad endpoint con Kaspersky, SentinelOne y Absolute.</li>
+                            <li>Gestión de redes LAN/WAN (Fortinet, Aruba, UniFi) y Active Directory (DNS, DHCP).</li>
+                            <li>Gestión de compras e inventario tecnológico corporativo utilizando SAP y Ariba.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Servicios -->
+                <section id="services-es">
+                    <h2 class="section-title">Lo que <span>Hago</span></h2>
+                    <div class="grid grid-3">
+                        <div class="card">
+                            <h3 class="service-title">⚙️ Atlassian & ITSM</h3>
+                            <ul class="styled-list">
+                                <li>Implementación y migración de Jira Software y JSM.</li>
+                                <li>Diseño de Workflows, SLAs y Portales de Help Desk.</li>
+                                <li>Configuración de permisos, colas y campos personalizados.</li>
+                                <li>Estructuración de bases de conocimiento en Confluence.</li>
+                                <li>Auditoría y optimización de instancias empresariales.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">🤖 Automatización & No-Code</h3>
+                            <ul class="styled-list">
+                                <li>Automatización avanzada de procesos, enfocada primariamente en el ecosistema Atlassian.</li>
+                                <li>Creación de flujos y sincronización de datos con n8n.</li>
+                                <li>Consumo de APIs REST y webhooks para integrar sistemas.</li>
+                                <li>Automatizaciones inteligentes y asignación de tickets.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">📊 Business Intelligence</h3>
+                            <ul class="styled-list">
+                                <li>Creación de dashboards ejecutivos en Looker Studio.</li>
+                                <li>Métricas de IT y KPIs de productividad (Help Desk).</li>
+                                <li>Generación y envío de reportes automáticos.</li>
+                                <li>Análisis de encuestas de satisfacción.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">💻 Soporte TI & Cloud</h3>
+                            <ul class="styled-list">
+                                <li>Soporte técnico remoto y diagnóstico de hardware/software.</li>
+                                <li>Implementación de Google Workspace y Microsoft 365.</li>
+                                <li>Gestión de Active Directory y Okta SSO.</li>
+                                <li>Configuración de respaldos en la nube y correos corporativos.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">🌐 Web & IA</h3>
+                            <ul class="styled-list">
+                                <li>Desarrollo de landing pages, portafolios y sitios corporativos.</li>
+                                <li>Implementación de Chatbots y asistentes de IA.</li>
+                                <li>Automatización documental y respuestas automáticas.</li>
+                                <li>Diseño responsive con integración a WhatsApp y Maps.</li>
+                                <li>Desarrollo Serverless (Google Apps Script, JS ES6+, HTML5, CSS3).</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">📚 Consultoría & Capacitación</h3>
+                            <ul class="styled-list">
+                                <li>Consultoría estratégica ITSM y procesos de mesa de ayuda.</li>
+                                <li>Capacitación en Jira, JSM y Confluence para equipos.</li>
+                                <li>Servicios dedicados para organizaciones e individuos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Casos de Estudio -->
+                <section id="projects-es">
+                    <h2 class="section-title">Casos de Estudio & <span>Consultoría</span></h2>
+                    <p style="text-align: center; color: var(--text-muted); margin-top: -2rem; margin-bottom: 2.5rem;">Haz clic en cualquier proyecto para abrir el apartado detallado de imágenes, arquitectura y videos demostrativos.</p>
+                    <div class="grid">
+                        <div class="card case-card-clickable" onclick="openCaseStudy('sitting', 'es')" role="button" tabindex="0">
+                            <div>
+                                <h3>Sitting Digital para Bodas</h3>
+                                <span class="date-badge">Serverless | Google Apps Script</span>
+                                <p>Desarrollo de un sistema web móvil interactivo para la gestión de invitados en tiempo real. Arquitectura serverless utilizando Google Sheets como base de datos y Apps Script. Frontend Mobile-First con JS ES6+, HTML5 y CSS3, con control de concurrencia y auditoría inmutable.</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 Ver Galería, Video & Detalles</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                        <div class="card case-card-clickable" onclick="openCaseStudy('noc', 'es')" role="button" tabindex="0">
+                            <div>
+                                <h3>Mesa de Servicio NOC - Sector Telecom & Hospitality</h3>
+                                <span class="date-badge">Jira Service Management</span>
+                                <p>Diseño de JSM como centro de operaciones (NOC) para gestionar redes, fibra (GPON) y CCTV. Implementación de reglas estrictas de escalamiento departamental y SLAs dinámicos segmentados por prioridad (P1-P4). Integración multicanal vía REST API con centralitas (FreePBX) y sistemas de monitoreo (Zabbix/PRTG).</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 Ver Galería, Video & Detalles</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                        <div class="card case-card-clickable" onclick="openCaseStudy('merchant', 'es')" role="button" tabindex="0">
+                            <div>
+                                <h3>Merchant Integration Workflow - Fintech</h3>
+                                <span class="date-badge">Jira Software | TGN</span>
+                                <p>Creación de un ecosistema en Jira para controlar la integración de clientes comerciales (Merchants) desde Sandbox hasta Producción. Uso de transiciones bloqueantes, Table Grid Next Gen (TGN) para perfiles antifraude, y Smart Checklists para auditoría inmutable de aprobaciones legales y financieras.</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 Ver Galería, Video & Detalles</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                        <div class="card case-card-clickable" onclick="openCaseStudy('audit', 'es')" role="button" tabindex="0">
+                            <div>
+                                <h3>Auditoría y Optimización de Licencias Enterprise</h3>
+                                <span class="date-badge">Atlassian Governance</span>
+                                <p>Ejecución de auditorías profundas de licencias en Jira, JSM, Confluence y Opsgenie para entornos corporativos a gran escala. Limpieza de grupos inactivos, tableros públicos y usuarios huérfanos, logrando reducir el desperdicio de licencias manteniendo la preparación para auditorías de cumplimiento.</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 Ver Galería, Video & Detalles</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                        <div class="card case-card-clickable" onclick="openCaseStudy('opsgenie', 'es')" role="button" tabindex="0">
+                            <div>
+                                <h3>Migración y Estrategia ITSM con Opsgenie</h3>
+                                <span class="date-badge">ITSM | Opsgenie</span>
+                                <p>Evaluación de riesgos del ciclo de vida de Opsgenie y el impacto del roadmap de Atlassian. Coordinación de la planificación de migración hacia Jira Service Management (JSM) garantizando la continuidad del negocio mediante despliegues por fases y estrategias de prueba en entornos Sandbox.</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 Ver Galería, Video & Detalles</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apartado Detallado de Caso de Estudio (Imágenes y Videos) -->
+                    <div id="case-detail-es" class="case-detail-panel">
+                        <div class="case-selector-pills">
+                            <button type="button" class="case-pill-btn" data-case="sitting" onclick="openCaseStudy('sitting', 'es')">Sitting Digital</button>
+                            <button type="button" class="case-pill-btn" data-case="noc" onclick="openCaseStudy('noc', 'es')">Mesa NOC (JSM)</button>
+                            <button type="button" class="case-pill-btn" data-case="merchant" onclick="openCaseStudy('merchant', 'es')">Merchant Workflow</button>
+                            <button type="button" class="case-pill-btn" data-case="audit" onclick="openCaseStudy('audit', 'es')">Auditoría Enterprise</button>
+                            <button type="button" class="case-pill-btn" data-case="opsgenie" onclick="openCaseStudy('opsgenie', 'es')">Migración Opsgenie</button>
+                        </div>
+
+                        <div class="case-detail-header">
+                            <div>
+                                <span id="case-badge-es" class="date-badge">Serverless | Google Apps Script</span>
+                                <h3 id="case-title-es">Sitting Digital para Bodas</h3>
+                                <p id="case-desc-es" style="color: var(--text-muted); max-width: 780px; margin: 0;">
+                                    Sistema web móvil interactivo para la gestión de invitados en tiempo real con arquitectura Serverless en Google Apps Script y auditoría inmutable.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-outline" onclick="closeCaseStudy('es')">✕ Cerrar Vista Detallada</button>
+                        </div>
+
+                        <div class="case-ComingSoon-banner">
+                            <h4>🚧 Próximamente cargaremos el contenido multimedia aquí</h4>
+                            <p>Estamos preparando las capturas de pantalla en alta resolución, los diagramas de flujo y el video demostrativo de este caso de estudio para mostrar el proyecto en funcionamiento.</p>
+                        </div>
+
+                        <div class="case-media-grid">
+                            <div class="media-placeholder-box">
+                                <div class="media-placeholder-icon">🎬</div>
+                                <h5>Video Demo del Proyecto</h5>
+                                <span>Próximamente: Recorrido en video del flujo e interfaz en tiempo real</span>
+                            </div>
+                            <div style="display: grid; gap: 1rem;">
+                                <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
+                                    <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">🖼️</div>
+                                    <h5>Galería de Capturas & UI</h5>
+                                    <span>Próximamente: Vistas de tableros, automatizaciones y pantallas</span>
+                                </div>
+                                <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
+                                    <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">📐</div>
+                                    <h5>Diagrama de Arquitectura & Flujo</h5>
+                                    <span>Próximamente: Esquema técnico de integraciones, APIs y reglas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Educación -->
+                <section id="education-es">
+                    <h2 class="section-title">Educación & <span>Certificaciones</span></h2>
+                    <div class="grid">
+                        <div class="card">
+                            <h3>Certificaciones Atlassian & Agile</h3>
+                            <ul class="styled-list">
+                                <li>Atlassian Credentialed in JSM Fundamentals with AI</li>
+                                <li>Atlassian Credentialed in Forge Fundamentals (ACH-805)</li>
+                                <li>Atlassian Credentialed in Rovo Fundamentals (ACH-800)</li>
+                                <li>Registered Scrum Basics™</li>
+                                <li>Gestión de Proyectos con Jira</li>
+                            </ul>
+                            <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Mi perfil en Atlassian Community</a>
+                        </div>
+                        <div class="card">
+                            <h3>Ciberseguridad, Redes & TI</h3>
+                            <ul class="styled-list">
+                                <li>Cisco CyberOps Associate (Networking Academy)</li>
+                                <li>Fortinet NSE 1 Network Security Associate</li>
+                                <li>Cisco CCNA Routing and Switching (Básico)</li>
+                                <li>Ciberseguridad CompTIA Security+ (SYO-501)</li>
+                                <li>NDG Linux Essentials (Cisco)</li>
+                                <li>Automatización n8n Essentials (Básico e Intermedio)</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Formación Académica</h3>
+                            <ul class="styled-list">
+                                <li><strong>Ingeniería de Software</strong> (En curso)<br>Universidad del Caribe (UNICARIBE)</li>
+                                <li><strong>Tecnólogo en Seguridad de la Información</strong><br>Graduado con honores - Instituto Tecnológico de Las Américas (ITLA)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contacto -->
+                <section id="contact-es">
+                    <div class="contact-box">
+                        <h2>¿Iniciamos un proyecto?</h2>
+                        <p>Disponibilidad para auditorías Jira, automatización y consultoría ITSM (A partir de las 6:00 PM GMT-4).</p>
+                        <a href="mailto:juliorosamejia@gmail.com" class="btn">juliorosamejia@gmail.com</a>
+                        <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-alt">Escríbeme por WhatsApp</a>
+                        <div class="contact-links">
+                            <a href="https://www.linkedin.com/in/julio-rosa-tech/" target="_blank" rel="noopener noreferrer" class="contact-link">Conectar en LinkedIn</a>
+                            <a href="https://www.instagram.com/juliorosa.tech/" target="_blank" rel="noopener noreferrer" class="contact-link">Instagram @juliorosa.tech</a>
+                            <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer" class="contact-link">Atlassian Community</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ==================== VISTA 2: ÚLTIMAS NOVEDADES JULIO ROSA TECH (ES) ==================== -->
+            <div class="view-novedades">
+                <div class="tech-hub-hero">
+                    <div class="ig-profile-card">
+                        <div class="ig-profile-left">
+                            <div class="ig-avatar-ring">
+                                <img src="julio-rosa.jpg" alt="Julio Rosa Tech">
+                            </div>
+                            <div>
+                                <div class="ig-handle-row">
+                                    <h1 class="ig-handle">juliorosa.tech</h1>
+                                    <span class="verified-badge" title="Verificado">✓</span>
+                                    <span class="brand-tag">Hub de Documentación & Novedades</span>
+                                </div>
+                                <p class="ig-bio-summary">
+                                    <strong>Julio Rosa | IT Consulting & Automations</strong> — En Instagram subo videos cortos, infografías y demos rápidos. Aquí encuentras la <strong>documentación extendida, guías paso a paso y notas técnicas</strong> de cada publicación.
+                                </p>
+                                <div class="ig-highlights-row">
+                                    <span class="ig-highlight-chip">✨ Gemini GRATIS</span>
+                                    <span class="ig-highlight-chip">🔌 API + MCP</span>
+                                    <span class="ig-highlight-chip">👨‍💻 ¿Quién Soy?</span>
+                                    <span class="ig-highlight-chip">🤖 Automatización & IA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/juliorosa.tech/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">Seguir en @juliorosa.tech ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Filtros de categorías -->
+                    <div class="filter-bar">
+                        <button type="button" class="filter-btn active" onclick="filterPosts('all', this)">🔥 Todas las Publicaciones (5)</button>
+                        <button type="button" class="filter-btn" onclick="filterPosts('ia-mcp', this)">🔌 IA, APIs & MCP</button>
+                        <button type="button" class="filter-btn" onclick="filterPosts('guias', this)">🎓 Guías & Recursos Gratis</button>
+                        <button type="button" class="filter-btn" onclick="filterPosts('reels', this)">🎬 Videos & Reels</button>
+                    </div>
+                </div>
+
+                <!-- ARTÍCULO 1: GEMINI GRATIS + 5 TB + YT PREMIUM -->
+                <article id="post-gemini-es" class="post-article-card" data-category="guias reels">
+                    <div class="post-meta-top">
+                        <span class="post-type-badge reel">🎬 Reel de Instagram · Plan de Estudiantes</span>
+                        <span class="date-badge">Guía Paso a Paso</span>
+                    </div>
+                    <h3>Gemini Gratis + 5 TB de Almacenamiento + YouTube Premium: Cómo activarlo y sacarle el máximo provecho</h3>
+                    <p class="post-summary">
+                        En este Reel te mostré cómo estudiantes universitarios pueden acceder al ecosistema premium de Google AI, almacenamiento masivo en la nube y beneficios para estudiar e investigar sin pagar suscripciones mensuales costosas. Aquí tienes la documentación completa y los requisitos detallados.
+                    </p>
+                    <div class="doc-Toggle-row">
+                        <button type="button" class="btn" onclick="toggleDoc('doc-gemini-es', this)">📖 Leer Documentación Completa</button>
+                        <a href="https://www.instagram.com/p/DfQdORONhdP/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Ver Reel en Instagram ↗</a>
+                    </div>
+
+                    <div id="doc-gemini-es" class="doc-content-drawer open">
+                        <h4>1. ¿Qué incluye exactamente este beneficio para estudiantes?</h4>
+                        <ul class="styled-list">
+                            <li><strong>Google One AI Premium (Gemini Advanced):</strong> Acceso a los modelos más avanzados de Gemini para programar, analizar documentos PDF extensos, resumir libros de la universidad y depurar código.</li>
+                            <li><strong>Almacenamiento Cloud (2 TB a 5 TB según el plan educativo/institucional):</strong> Espacio compartido entre Google Drive, Gmail y Google Fotos para respaldar proyectos, máquinas virtuales y repositorios.</li>
+                            <li><strong>Integración directa en Google Docs, Sheets y Slides:</strong> Uso de Gemini lateralmente dentro de tus documentos académicos y hojas de cálculo.</li>
+                            <li><strong>Beneficios de YouTube Premium Estudiantil:</strong> Videos técnicos y tutoriales sin anuncios, reproducción en segundo plano y YouTube Music.</li>
+                        </ul>
+
+                        <h4>2. Requisitos indispensables antes de aplicar</h4>
+                        <ul class="styled-list">
+                            <li>Tener un <strong>correo institucional universitario activo</strong> (terminado en <code>.edu</code> o <code>.edu.do</code>, por ejemplo de UNICARIBE, ITLA, INTEC, PUCMM, UASD, etc.).</li>
+                            <li>Una cuenta de Google personal (donde se activará el beneficio de Google One AI Premium) o verificar elegibilidad a través del portal oficial de estudiantes de Google / SheerID.</li>
+                            <li>Comprobante de matrícula vigente (horario de clases o carnet universitario digital) en caso de que el sistema de verificación (SheerID) lo solicite.</li>
+                        </ul>
+
+                        <h4>3. Paso a paso para activarlo</h4>
+                        <div class="code-flow">
+1. Entra a la página de oferta para estudiantes de Google One AI / Gemini Student Offer.<br>
+2. Inicia sesión con tu cuenta de Google personal y selecciona "Verificar condición de estudiante".<br>
+3. Introduce tu correo institucional (.edu / .edu.do) en el formulario de verificación.<br>
+4. Abre tu bandeja de correo universitario y confirma el enlace de validación.<br>
+5. Para YouTube Premium Student: entra a youtube.com/premium/student y valida con SheerID.
+                        </div>
+
+                        <div class="doc-callout">
+                            <strong>💡 Consejo Pro de @juliorosa.tech:</strong> Programa un recordatorio en tu calendario 7 días antes de que finalice el periodo promocional anual para renovar tu verificación de estudiante o gestionar tu suscripción a tiempo.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ARTÍCULO 2: TRILOGÍA API + MCP -->
+                <article id="post-mcp-es" class="post-article-card" data-category="ia-mcp">
+                    <div class="post-meta-top">
+                        <span class="post-type-badge">🔌 Trilogía en Instagram (3 Posts) · Arquitectura & IA</span>
+                        <span class="date-badge">Documentación Extendida</span>
+                    </div>
+                    <h3>¿Qué es una API, qué es el MCP y qué pasa cuando los unimos?</h3>
+                    <p class="post-summary">
+                        En Instagram publiqué la serie de 3 infografías explicando la diferencia entre una <strong>API (El Camarero)</strong>, el <strong>MCP / Model Context Protocol (El Enchufe Universal)</strong> y cómo juntos permiten que la <strong>IA (El Cerebro)</strong> ejecute acciones reales en tus sistemas. Aquí tienes la guía técnica detallada.
+                    </p>
+
+                    <!-- Resumen visual de los 3 posts de Instagram -->
+                    <div class="concept-trio">
+                        <div class="concept-box">
+                            <h4>1️⃣ ¿Qué es una API? (El Camarero)</h4>
+                            <p>Es el intermediario que lleva tu petición (el pedido de la mesa) hasta el servidor (la cocina) y te devuelve exactamente los datos que pediste.</p>
+                        </div>
+                        <div class="concept-box">
+                            <h4>2️⃣ ¿Qué es el MCP? (El Enchufe USB-C)</h4>
+                            <p><em>Model Context Protocol</em>: es el estándar universal que permite a cualquier IA conectarse a tus herramientas y datos sin programar cada cable desde cero.</p>
+                        </div>
+                        <div class="concept-box">
+                            <h4>3️⃣ API + MCP Unidos (Acción Real)</h4>
+                            <p>La IA (el cerebro) se enchufa mediante el MCP (el conector universal) a la API (el camarero) para ejecutar tareas automáticas reales en tus apps.</p>
+                        </div>
+                    </div>
+
+                    <div class="doc-Toggle-row">
+                        <button type="button" class="btn" onclick="toggleDoc('doc-mcp-es', this)">📖 Leer Documentación Técnica Completa</button>
+                        <a href="https://www.instagram.com/p/De-GsLOhc3b/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Ver Infografías en Instagram ↗</a>
+                    </div>
+
+                    <div id="doc-mcp-es" class="doc-content-drawer open">
+                        <h4>¿Por qué antes era difícil conectar una IA a tus sistemas?</h4>
+                        <p>
+                            Antes del <strong>MCP (Model Context Protocol)</strong>, si querías que una Inteligencia Artificial creara un ticket en <strong>Jira</strong>, leyera una fila de <strong>Google Sheets</strong> o consultara tu base de datos, tenías que escribir código personalizado para enseñarle a la IA cómo hablar con cada API individualmente. Era como la época en que cada celular tenía un cargador diferente.
+                        </p>
+
+                        <h4>La arquitectura completa paso a paso</h4>
+                        <div class="code-flow">
+[ Usuario ] ──► [ IA / LLM (El Cerebro) ] ══( MCP: Enchufe Universal )══► [ Servidor MCP ] ──( Petición HTTP )──► [ API (El Camarero) ] ──► [ Tus Apps: Jira / n8n / DB ]
+                        </div>
+
+                        <h4>Ejemplo práctico en el mundo real (Consultoría IT & Automatización)</h4>
+                        <ul class="styled-list">
+                            <li><strong>Sin MCP + API:</strong> Le pides a la IA que te redacte un reporte de incidentes, luego tú tienes que copiarlo a mano, abrir Jira Service Management y crear el ticket manualmente.</li>
+                            <li><strong>Con MCP + API:</strong> Le dices a tu asistente: <em>"Revisa los incidentes P1 de hoy en Jira y envíame el resumen por Slack/WhatsApp"</em>. La IA usa su enchufe <strong>MCP</strong>, el servidor MCP llama a la <strong>API REST de Jira</strong> (el camarero), obtiene los tickets en tiempo real y ejecuta la tarea por ti.</li>
+                        </ul>
+
+                        <div class="doc-callout">
+                            <strong>🚀 ¿Quieres implementar esto en tu empresa?</strong> Combinando <strong>n8n + APIs REST + Agentes con MCP</strong> podemos conectar tu Jira, tu CRM o tus hojas de Google Sheets para que trabajen en piloto automático.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ARTÍCULO 3: INTRO PROYECTO DEMO EPISODIO 01 -->
+                <article id="post-intro-es" class="post-article-card" data-category="reels">
+                    <div class="post-meta-top">
+                        <span class="post-type-badge reel">🎬 Reel · Proyecto Demo — Episodio 01</span>
+                        <span class="date-badge">Comunidad @juliorosa.tech</span>
+                    </div>
+                    <h3>INTRO: Proyecto Demo · Episodio 01 — Reviews, IA, Setups y Tech en buen dominicano 🇩🇴</h3>
+                    <p class="post-summary">
+                        El primer video oficial de <strong>@juliorosa.tech</strong>: por qué abrí este espacio para compartir lo que aprendo y construyo día a día como Ingeniero de Software en formación, Administrador Atlassian Senior y consultor de automatización.
+                    </p>
+                    <div class="doc-Toggle-row">
+                        <button type="button" class="btn" onclick="toggleDoc('doc-intro-es', this)">📖 Ver Notas del Episodio & Roadmap</button>
+                        <a href="https://www.instagram.com/p/DfI1HghtM-Q/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Ver Video en Instagram ↗</a>
+                    </div>
+
+                    <div id="doc-intro-es" class="doc-content-drawer">
+                        <h4>¿De qué trata @juliorosa.tech?</h4>
+                        <ul class="styled-list">
+                            <li><strong>Inteligencia Artificial aplicada (sin humo):</strong> Herramientas reales, protocolos como MCP, agentes y cómo usarlos para estudiar o trabajar mejor.</li>
+                            <li><strong>Automatización & Proyectos Demo:</strong> Cómo conectar sistemas con n8n, webhooks, APIs REST y Google Apps Script explicados en lenguaje claro y en buen dominicano.</li>
+                            <li><strong>Setups, Productividad & Carrera en TI:</strong> Mi experiencia trabajando en operaciones tecnológicas regionales para más de 14 países en LATAM mientras curso Ingeniería de Software.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= ENGLISH CONTENT ================= -->
+    <div id="content-en" lang="en">
+        <div class="container">
+
+            <!-- ==================== VIEW 1: MY PORTFOLIO (EN) ==================== -->
+            <div class="view-portfolio">
+                <!-- Hero Section -->
+                <header class="hero">
+                    <div class="hero-text">
+                        <h3>Hello, I'm</h3>
+                        <h1>Julio Rosa</h1>
+                        <h2>Atlassian Administrator & IT Consultant</h2>
+                        <p>IT Consultant and Information Security Technologist with over 5 years of experience. Specialist in the Atlassian suite (Jira/Confluence), Senior enterprise support, corporate cybersecurity, and automated integrations (n8n, APIs). I help scale technological operations by eliminating operational noise.</p>
+                        
+                        <div class="btn-group">
+                            <a href="#services-en" class="btn">My Services</a>
+                            <button type="button" onclick="switchView('novedades')" class="btn btn-outline">⚡ Updates @juliorosa.tech</button>
+                            <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">WhatsApp</a>
+                            <a href="https://www.linkedin.com/in/julio-rosa-tech/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">LinkedIn</a>
+                            <a href="https://www.instagram.com/juliorosa.tech/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">Instagram</a>
+                            <a href="julio-rosa-cv.pdf" target="_blank" rel="noopener" class="btn btn-outline" download="Julio-Rosa-CV.pdf">Download Resume</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <img src="julio-rosa.jpg" alt="Julio Rosa - Atlassian Administrator" width="400" height="400" fetchpriority="high">
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Quick Teaser Banner to jump to Updates -->
+                <div class="novedades-teaser">
+                    <div class="novedades-teaser-text">
+                        <h3>📲 Coming from my Instagram @juliorosa.tech?</h3>
+                        <p>Read the extended documentation, API + MCP architecture guides, and step-by-step notes from my latest Reels.</p>
+                    </div>
+                    <button type="button" class="btn" onclick="switchView('novedades')">Explore Latest Tech Guides →</button>
+                </div>
+
+                <!-- Experience -->
+                <section id="experience-en">
+                    <h2 class="section-title">Professional <span>Experience</span></h2>
+                    <div class="full-card">
+                        <h3>Internal IT Support Sr Analyst | Atlassian Administrator</h3>
+                        <span class="company">Delivery Hero (PedidosYa) · Dominican Republic | March 2025 - Present</span>
+                        <p>Comprehensive administration of the Atlassian suite for large-scale operations across LATAM. Technical team mentoring and IT infrastructure optimization.</p>
+                        <ul class="styled-list">
+                            <li>Design, configuration, and governance of highly critical projects in Jira Software and Jira Service Management.</li>
+                            <li>Development of scripts and advanced cross-platform automations (n8n, REST APIs) to integrate Jira with the core business.</li>
+                            <li>Advanced management of platform security, compliance, and performance within Atlassian.</li>
+                            <li>Strategic support for cross-departmental projects, improving traceability and efficiency (SLAs, Workflows).</li>
+                        </ul>
+                    </div>
+                    <div class="full-card">
+                        <h3>Internal IT Support Analyst</h3>
+                        <span class="company">Delivery Hero (PedidosYa) · Dominican Republic | August 2021 - March 2025</span>
+                        <p>Remote technical support for over 14 countries in LATAM, managing identity, networks, and corporate cybersecurity.</p>
+                        <ul class="styled-list">
+                            <li>Administration of Google Workspace, Office 365, Okta SSO, and JumpCloud.</li>
+                            <li>Deployment and management of endpoint cybersecurity with Kaspersky, SentinelOne, and Absolute.</li>
+                            <li>LAN/WAN network management (Fortinet, Aruba, UniFi) and Active Directory (DNS, DHCP).</li>
+                            <li>Management of IT purchasing and corporate inventory using SAP and Ariba.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Services -->
+                <section id="services-en">
+                    <h2 class="section-title">What I <span>Do</span></h2>
+                    <div class="grid grid-3">
+                        <div class="card">
+                            <h3 class="service-title">⚙️ Atlassian & ITSM</h3>
+                            <ul class="styled-list">
+                                <li>Implementation and migration of Jira Software and JSM.</li>
+                                <li>Design of Workflows, SLAs, and Help Desk Portals.</li>
+                                <li>Configuration of permissions, queues, and custom fields.</li>
+                                <li>Structuring knowledge bases in Confluence.</li>
+                                <li>Audit and optimization of enterprise instances.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">🤖 Automation & No-Code</h3>
+                            <ul class="styled-list">
+                                <li>Advanced process automation, primarily focused on the Atlassian ecosystem.</li>
+                                <li>Creation of data synchronization flows using n8n.</li>
+                                <li>Consumption of REST APIs and webhooks to integrate systems.</li>
+                                <li>Smart automations and automated ticket assignment.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">📊 Business Intelligence</h3>
+                            <ul class="styled-list">
+                                <li>Creation of executive dashboards in Looker Studio.</li>
+                                <li>IT metrics and productivity KPIs (Help Desk).</li>
+                                <li>Generation and delivery of automated reports.</li>
+                                <li>Analysis of customer satisfaction surveys.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">💻 IT Support & Cloud</h3>
+                            <ul class="styled-list">
+                                <li>Remote technical support and hardware/software diagnostics.</li>
+                                <li>Implementation of Google Workspace and Microsoft 365.</li>
+                                <li>Management of Active Directory and Okta SSO.</li>
+                                <li>Configuration of cloud backups and corporate emails.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">🌐 Web & AI</h3>
+                            <ul class="styled-list">
+                                <li>Development of landing pages, portfolios, and corporate sites.</li>
+                                <li>Implementation of Chatbots and AI assistants.</li>
+                                <li>Document automation and automated responses.</li>
+                                <li>Responsive design with WhatsApp and Google Maps integrations.</li>
+                                <li>Serverless Development (Google Apps Script, JS ES6+, HTML5, CSS3).</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="service-title">📚 Consulting & Training</h3>
+                            <ul class="styled-list">
+                                <li>Strategic ITSM consulting and service desk processes.</li>
+                                <li>Training in Jira, JSM, and Confluence for teams.</li>
+                                <li>Dedicated services for organizations and individuals.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Case Studies -->
+                <section id="projects-en">
+                    <h2 class="section-title">Case Studies & <span>Consulting</span></h2>
+                    <p style="text-align: center; color: var(--text-muted); margin-top: -2rem; margin-bottom: 2.5rem;">Click on any project card to open the detailed showcase with images, architecture diagrams, and demo videos.</p>
+                    <div class="grid">
+                        <div class="card case-card-clickable" onclick="openCaseStudy('sitting', 'en')" role="button" tabindex="0">
+                            <div>
+                                <h3>Digital Seating Chart for Weddings</h3>
+                                <span class="date-badge">Serverless | Google Apps Script</span>
+                                <p>Developed an interactive mobile web system for real-time guest management. Serverless architecture using Google Sheets as a database and Apps Script. Mobile-First frontend with JS ES6+, HTML5, and CSS3, featuring concurrency control and immutable audit logging.</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 View Gallery, Video & Details</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                        <div class="card case-card-clickable" onclick="openCaseStudy('noc', 'en')" role="button" tabindex="0">
+                            <div>
+                                <h3>NOC Service Desk - Telecom & Hospitality</h3>
+                                <span class="date-badge">Jira Service Management</span>
+                                <p>Designed JSM as a Network Operations Center (NOC) to manage networks, GPON fiber, and CCTV. Implemented strict departmental escalation rules and dynamic SLAs segmented by priority (P1-P4). Multichannel REST API integration with PBX systems (FreePBX) and monitoring tools (Zabbix/PRTG).</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 View Gallery, Video & Details</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                        <div class="card case-card-clickable" onclick="openCaseStudy('merchant', 'en')" role="button" tabindex="0">
+                            <div>
+                                <h3>Merchant Integration Workflow - Fintech</h3>
+                                <span class="date-badge">Jira Software | TGN</span>
+                                <p>Created an ecosystem in Jira to manage the onboarding of commercial clients (Merchants) from Sandbox to Production. Utilized blocking transitions, Table Grid Next Gen (TGN) for anti-fraud profiles, and Smart Checklists for an immutable audit trail of legal and financial approvals.</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 View Gallery, Video & Details</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                        <div class="card case-card-clickable" onclick="openCaseStudy('audit', 'en')" role="button" tabindex="0">
+                            <div>
+                                <h3>Enterprise License Audit & Optimization</h3>
+                                <span class="date-badge">Atlassian Governance</span>
+                                <p>Executed deep licensing audits across Jira, JSM, Confluence, and Opsgenie for large-scale corporate environments. Cleaned inactive groups, public boards, and orphaned users, successfully reducing licensing waste while maintaining compliance audit readiness.</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 View Gallery, Video & Details</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                        <div class="card case-card-clickable" onclick="openCaseStudy('opsgenie', 'en')" role="button" tabindex="0">
+                            <div>
+                                <h3>Opsgenie Migration & ITSM Strategy</h3>
+                                <span class="date-badge">ITSM | Opsgenie</span>
+                                <p>Evaluated Opsgenie's lifecycle risks and the impact of the Atlassian roadmap. Coordinated migration planning towards Jira Service Management (JSM), ensuring business continuity through phased deployments and sandbox testing strategies.</p>
+                            </div>
+                            <div class="case-card-action">
+                                <span>📸 View Gallery, Video & Details</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Case Study Showcase Panel (EN) -->
+                    <div id="case-detail-en" class="case-detail-panel">
+                        <div class="case-selector-pills">
+                            <button type="button" class="case-pill-btn" data-case="sitting" onclick="openCaseStudy('sitting', 'en')">Digital Seating Chart</button>
+                            <button type="button" class="case-pill-btn" data-case="noc" onclick="openCaseStudy('noc', 'en')">NOC Service Desk (JSM)</button>
+                            <button type="button" class="case-pill-btn" data-case="merchant" onclick="openCaseStudy('merchant', 'en')">Merchant Workflow</button>
+                            <button type="button" class="case-pill-btn" data-case="audit" onclick="openCaseStudy('audit', 'en')">Enterprise Audit</button>
+                            <button type="button" class="case-pill-btn" data-case="opsgenie" onclick="openCaseStudy('opsgenie', 'en')">Opsgenie Migration</button>
+                        </div>
+
+                        <div class="case-detail-header">
+                            <div>
+                                <span id="case-badge-en" class="date-badge">Serverless | Google Apps Script</span>
+                                <h3 id="case-title-en">Digital Seating Chart for Weddings</h3>
+                                <p id="case-desc-en" style="color: var(--text-muted); max-width: 780px; margin: 0;">
+                                    Interactive mobile web system for real-time guest management with Serverless architecture on Google Apps Script and immutable audit logging.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-outline" onclick="closeCaseStudy('en')">✕ Close Detailed View</button>
+                        </div>
+
+                        <div class="case-ComingSoon-banner">
+                            <h4>🚧 Coming Soon: Multimedia content will be uploaded here</h4>
+                            <p>We are currently preparing high-resolution screenshots, architecture diagrams, and the walkthrough video for this case study.</p>
+                        </div>
+
+                        <div class="case-media-grid">
+                            <div class="media-placeholder-box">
+                                <div class="media-placeholder-icon">🎬</div>
+                                <h5>Project Demo Video</h5>
+                                <span>Coming soon: Real-time video walkthrough of the workflow & interface</span>
+                            </div>
+                            <div style="display: grid; gap: 1rem;">
+                                <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
+                                    <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">🖼️</div>
+                                    <h5>Screenshots & UI Gallery</h5>
+                                    <span>Coming soon: Dashboards, automations, and interface screens</span>
+                                </div>
+                                <div class="media-placeholder-box" style="min-height: 105px; padding: 1.2rem;">
+                                    <div class="media-placeholder-icon" style="width: 42px; height: 42px; font-size: 1.2rem;">📐</div>
+                                    <h5>Architecture & Workflow Diagram</h5>
+                                    <span>Coming soon: Technical schema of integrations, APIs, and rules</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section id="education-en">
+                    <h2 class="section-title">Education & <span>Certifications</span></h2>
+                    <div class="grid">
+                        <div class="card">
+                            <h3>Atlassian & Agile Certifications</h3>
+                            <ul class="styled-list">
+                                <li>Atlassian Credentialed in JSM Fundamentals with AI</li>
+                                <li>Atlassian Credentialed in Forge Fundamentals (ACH-805)</li>
+                                <li>Atlassian Credentialed in Rovo Fundamentals (ACH-800)</li>
+                                <li>Registered Scrum Basics™</li>
+                                <li>Project Management with Jira</li>
+                            </ul>
+                            <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">My Atlassian Community profile</a>
+                        </div>
+                        <div class="card">
+                            <h3>Cybersecurity, Networks & IT</h3>
+                            <ul class="styled-list">
+                                <li>Cisco CyberOps Associate (Networking Academy)</li>
+                                <li>Fortinet NSE 1 Network Security Associate</li>
+                                <li>Cisco CCNA Routing and Switching (Basics)</li>
+                                <li>CompTIA Security+ (SYO-501)</li>
+                                <li>NDG Linux Essentials (Cisco)</li>
+                                <li>n8n Essentials Automation (Basic & Intermediate)</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Academic Background</h3>
+                            <ul class="styled-list">
+                                <li><strong>Software Engineering</strong> (Ongoing)<br>Universidad del Caribe (UNICARIBE)</li>
+                                <li><strong>Information Security Technologist</strong><br>Graduated with Honors - Instituto Tecnológico de Las Américas (ITLA)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact -->
+                <section id="contact-en">
+                    <div class="contact-box">
+                        <h2>Shall we start a project?</h2>
+                        <p>Available for Jira audits, automation, and ITSM consulting (After 6:00 PM GMT-4).</p>
+                        <a href="mailto:juliorosamejia@gmail.com" class="btn">juliorosamejia@gmail.com</a>
+                        <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-alt">Message me on WhatsApp</a>
+                        <div class="contact-links">
+                            <a href="https://www.linkedin.com/in/julio-rosa-tech/" target="_blank" rel="noopener noreferrer" class="contact-link">Connect on LinkedIn</a>
+                            <a href="https://www.instagram.com/juliorosa.tech/" target="_blank" rel="noopener noreferrer" class="contact-link">Instagram @juliorosa.tech</a>
+                            <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer" class="contact-link">Atlassian Community</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ==================== VIEW 2: LATEST UPDATES JULIO ROSA TECH (EN) ==================== -->
+            <div class="view-novedades">
+                <div class="tech-hub-hero">
+                    <div class="ig-profile-card">
+                        <div class="ig-profile-left">
+                            <div class="ig-avatar-ring">
+                                <img src="julio-rosa.jpg" alt="Julio Rosa Tech">
+                            </div>
+                            <div>
+                                <div class="ig-handle-row">
+                                    <h1 class="ig-handle">juliorosa.tech</h1>
+                                    <span class="verified-badge" title="Verified">✓</span>
+                                    <span class="brand-tag">Extended Docs & Tech Hub</span>
+                                </div>
+                                <p class="ig-bio-summary">
+                                    <strong>Julio Rosa | IT Consulting & Automations</strong> — On Instagram I share short-form videos, infographics, and quick demos. Here you'll find the <strong>extended technical documentation, step-by-step guides, and deep dives</strong> for every post.
+                                </p>
+                                <div class="ig-highlights-row">
+                                    <span class="ig-highlight-chip">✨ Free Gemini Pro</span>
+                                    <span class="ig-highlight-chip">🔌 API + MCP</span>
+                                    <span class="ig-highlight-chip">👨‍💻 Who Am I?</span>
+                                    <span class="ig-highlight-chip">🤖 AI & Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/juliorosa.tech/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">Follow @juliorosa.tech ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ARTICLE 1 (EN): FREE GEMINI + 5 TB + YT PREMIUM -->
+                <article id="post-gemini-en" class="post-article-card" data-category="guias reels" style="margin-top: 2rem;">
+                    <div class="post-meta-top">
+                        <span class="post-type-badge reel">🎬 Instagram Reel · Student Plan</span>
+                        <span class="date-badge">Step-by-Step Guide</span>
+                    </div>
+                    <h3>Free Gemini Advanced + 5 TB Cloud Storage + YouTube Premium: Complete Activation Guide</h3>
+                    <p class="post-summary">
+                        In this Reel I showed how university students can unlock Google's AI Premium ecosystem, massive cloud storage, and study benefits. Read the complete eligibility requirements and activation steps below.
+                    </p>
+                    <div class="doc-Toggle-row">
+                        <button type="button" class="btn" onclick="toggleDoc('doc-gemini-en', this)">📖 Read Full Documentation</button>
+                        <a href="https://www.instagram.com/p/DfQdORONhdP/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Watch Reel on Instagram ↗</a>
+                    </div>
+                    <div id="doc-gemini-en" class="doc-content-drawer open">
+                        <h4>1. What's included in the Student Bundle?</h4>
+                        <ul class="styled-list">
+                            <li><strong>Google One AI Premium (Gemini Advanced):</strong> Access to Google's top AI models for coding, analyzing large textbooks/PDFs, and debugging software projects.</li>
+                            <li><strong>Cloud Storage (2 TB to 5 TB):</strong> High-capacity storage across Google Drive, Gmail, and Photos for your engineering projects and backups.</li>
+                            <li><strong>Workspace Integration:</strong> Gemini built directly inside Google Docs, Sheets, and Slides.</li>
+                        </ul>
+                        <h4>2. How to Activate It</h4>
+                        <div class="code-flow">
+1. Visit the official Google One AI Student Offer page.<br>
+2. Sign in with your personal Google account and click "Verify student status".<br>
+3. Enter your active university email (.edu / .edu.do) and confirm the verification link.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ARTICLE 2 (EN): API + MCP -->
+                <article id="post-mcp-en" class="post-article-card" data-category="ia-mcp">
+                    <div class="post-meta-top">
+                        <span class="post-type-badge">🔌 3-Part Infographic Series · AI Architecture</span>
+                        <span class="date-badge">Extended Documentation</span>
+                    </div>
+                    <h3>What is an API, What is MCP, and What Happens When We Combine Them?</h3>
+                    <p class="post-summary">
+                        A complete breakdown of my 3-part Instagram series comparing <strong>APIs (The Waiter)</strong>, <strong>MCP / Model Context Protocol (The Universal USB-C Plug)</strong>, and how they let <strong>AI (The Brain)</strong> execute real tasks across your apps.
+                    </p>
+                    <div class="concept-trio">
+                        <div class="concept-box">
+                            <h4>1️⃣ What is an API? (The Waiter)</h4>
+                            <p>The intermediary that takes your request to the server (the kitchen) and brings back the exact data you asked for.</p>
+                        </div>
+                        <div class="concept-box">
+                            <h4>2️⃣ What is MCP? (The USB-C Plug)</h4>
+                            <p><em>Model Context Protocol</em>: the universal standard that lets any AI connect directly to your work tools and data sources.</p>
+                        </div>
+                        <div class="concept-box">
+                            <h4>3️⃣ API + MCP Together</h4>
+                            <p>The AI (brain) plugs into the MCP (universal socket), which talks to the API (waiter) to automate real actions across all your apps.</p>
+                        </div>
+                    </div>
+                    <div class="doc-Toggle-row">
+                        <button type="button" class="btn" onclick="toggleDoc('doc-mcp-en', this)">📖 Read Full Technical Breakdown</button>
+                        <a href="https://www.instagram.com/p/De-GsLOhc3b/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Series on Instagram ↗</a>
+                    </div>
+                    <div id="doc-mcp-en" class="doc-content-drawer open">
+                        <h4>Architecture Flow</h4>
+                        <div class="code-flow">
+[ User ] ──► [ AI / LLM (The Brain) ] ══( MCP: Universal Plug )══► [ MCP Server ] ──► [ REST API (The Waiter) ] ──► [ Jira / n8n / Databases ]
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ARTICLE 3 (EN): INTRO EPISODE 01 -->
+                <article id="post-intro-en" class="post-article-card" data-category="reels">
+                    <div class="post-meta-top">
+                        <span class="post-type-badge reel">🎬 Reel · Demo Project — Episode 01</span>
+                        <span class="date-badge">@juliorosa.tech Community</span>
+                    </div>
+                    <h3>INTRO: Demo Project · Episode 01 — Reviews, AI, Setups & Tech</h3>
+                    <p class="post-summary">
+                        Welcome to <strong>@juliorosa.tech</strong>: sharing practical AI workflows, n8n automations, setups, and real-world IT engineering lessons.
+                    </p>
+                    <div class="doc-Toggle-row">
+                        <button type="button" class="btn" onclick="toggleDoc('doc-intro-en', this)">📖 View Episode Notes</button>
+                        <a href="https://www.instagram.com/p/DfI1HghtM-Q/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Watch on Instagram ↗</a>
+                    </div>
+                    <div id="doc-intro-en" class="doc-content-drawer">
+                        <p>Follow along on Instagram for upcoming episodes on n8n + Jira automations, AI agents with MCP, and developer productivity setups.</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="footer-es">© <span class="year">2026</span> Julio Rosa · Atlassian Administrator, IT Consultant &amp; @juliorosa.tech</p>
+            <p class="footer-en">© <span class="year">2026</span> Julio Rosa · Atlassian Administrator, IT Consultant &amp; @juliorosa.tech</p>
+            <nav aria-label="Redes / Social">
+                <a href="https://www.instagram.com/juliorosa.tech/" target="_blank" rel="noopener noreferrer">Instagram (@juliorosa.tech)</a>
+                <a href="https://www.linkedin.com/in/julio-rosa-tech/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer">Atlassian Community</a>
+                <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="mailto:juliorosamejia@gmail.com">Email</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // --- Idioma: se guarda la elección y se actualiza el botón ---
+        function applyLanguage(lang) {
+            const btn = document.getElementById('lang-toggle-btn');
+            document.documentElement.lang = lang;
+            if (lang === 'en') {
+                btn.textContent = 'ES';
+                btn.setAttribute('aria-label', 'Ver en español');
+            } else {
+                btn.textContent = 'EN';
+                btn.setAttribute('aria-label', 'Switch to English');
+            }
+        }
+
+        function toggleLanguage() {
+            const next = document.documentElement.lang === 'en' ? 'es' : 'en';
+            try { localStorage.setItem('lang', next); } catch (e) {}
+            applyLanguage(next);
+            window.scrollTo({ top: 0 });
+        }
+
+        // --- Cambio de vista entre "Mi Portafolio" y "Últimas Novedades Julio Rosa Tech" ---
+        function switchView(viewName, skipScroll) {
+            const v = viewName === 'novedades' ? 'novedades' : 'portfolio';
+            document.body.setAttribute('data-view', v);
+
+            document.querySelectorAll('.tab-portfolio').forEach(btn => {
+                btn.classList.toggle('active', v === 'portfolio');
+            });
+            document.querySelectorAll('.tab-novedades').forEach(btn => {
+                btn.classList.toggle('active', v === 'novedades');
+            });
+
+            if (history.replaceState) {
+                history.replaceState(null, '', v === 'novedades' ? '#novedades' : window.location.pathname);
+            }
+
+            if (!skipScroll) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Ir a una sección específica dentro de Mi Portafolio desde el menú desplegable
+        function goToSection(viewName, sectionId) {
+            switchView(viewName, true);
+            setTimeout(() => {
+                const el = document.getElementById(sectionId);
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }, 40);
+        }
+
+        // Ir a un artículo específico dentro de Novedades y abrir su documentación
+        function goToArticle(articleId, drawerId) {
+            switchView('novedades', true);
+            const drawer = document.getElementById(drawerId);
+            if (drawer && !drawer.classList.contains('open')) {
+                drawer.classList.add('open');
+            }
+            setTimeout(() => {
+                const el = document.getElementById(articleId);
+                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 50);
+        }
+
+        // Mostrar / ocultar la documentación extensa de cada post
+        function toggleDoc(drawerId, btn) {
+            const drawer = document.getElementById(drawerId);
+            if (!drawer) return;
+            const isOpen = drawer.classList.toggle('open');
+            const isEn = document.documentElement.lang === 'en';
+            if (btn) {
+                btn.textContent = isOpen
+                    ? (isEn ? '🔼 Hide Documentation' : '🔼 Ocultar Documentación')
+                    : (isEn ? '📖 Read Full Documentation' : '📖 Leer Documentación Completa');
+            }
+        }
+
+        // Filtro por categoría en la sección de Novedades
+        function filterPosts(category, clickedBtn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            if (clickedBtn) clickedBtn.classList.add('active');
+
+            document.querySelectorAll('#content-es .post-article-card').forEach(card => {
+                const cats = card.getAttribute('data-category') || '';
+                card.style.display = (category === 'all' || cats.indexOf(category) !== -1) ? '' : 'none';
+            });
+        }
+
+        // --- Datos y lógica del apartado detallado de Casos de Estudio ---
+        const caseStudiesData = {
+            sitting: {
+                es: {
+                    badge: 'Serverless | Google Apps Script',
+                    title: 'Sitting Digital para Bodas',
+                    desc: 'Sistema web móvil interactivo para la gestión de invitados en tiempo real. Arquitectura Serverless con Google Sheets como base de datos, frontend Mobile-First (JS ES6+, HTML5, CSS3), control de concurrencia y registro de auditoría inmutable (Event_Log).'
+                },
+                en: {
+                    badge: 'Serverless | Google Apps Script',
+                    title: 'Digital Seating Chart for Weddings',
+                    desc: 'Interactive mobile web system for real-time guest management. Serverless architecture using Google Sheets as a database and Google Apps Script, Mobile-First frontend, concurrency control, and immutable audit logging (Event_Log).'
+                }
+            },
+            noc: {
+                es: {
+                    badge: 'Jira Service Management | REST API',
+                    title: 'Mesa de Servicio NOC - Sector Telecom & Hospitality',
+                    desc: 'Diseño de JSM como centro de operaciones de red (NOC) para gestionar fibra GPON, redes y CCTV, con reglas de escalamiento departamental, SLAs dinámicos P1-P4 e integración vía REST API con FreePBX y Zabbix/PRTG.'
+                },
+                en: {
+                    badge: 'Jira Service Management | REST API',
+                    title: 'NOC Service Desk - Telecom & Hospitality',
+                    desc: 'Designed JSM as a Network Operations Center (NOC) for GPON fiber, networks, and CCTV, featuring strict escalation rules, dynamic P1-P4 SLAs, and REST API integrations with FreePBX and Zabbix/PRTG.'
+                }
+            },
+            merchant: {
+                es: {
+                    badge: 'Jira Software | Table Grid Next Gen',
+                    title: 'Merchant Integration Workflow - Fintech',
+                    desc: 'Ecosistema en Jira para controlar el onboarding e integración de clientes comerciales (Merchants) desde Sandbox hasta Producción, con transiciones bloqueantes, perfiles antifraude en TGN y auditoría legal y financiera.'
+                },
+                en: {
+                    badge: 'Jira Software | Table Grid Next Gen',
+                    title: 'Merchant Integration Workflow - Fintech',
+                    desc: 'Jira ecosystem controlling commercial client (Merchant) onboarding from Sandbox to Production, featuring blocking transitions, anti-fraud profiles in TGN, and immutable legal/financial approval checklists.'
+                }
+            },
+            audit: {
+                es: {
+                    badge: 'Atlassian Governance',
+                    title: 'Auditoría y Optimización de Licencias Enterprise',
+                    desc: 'Auditorías profundas de licencias en Jira, JSM, Confluence y Opsgenie para entornos corporativos a gran escala. Limpieza de grupos inactivos, tableros públicos y usuarios huérfanos para reducir costos y asegurar cumplimiento.'
+                },
+                en: {
+                    badge: 'Atlassian Governance',
+                    title: 'Enterprise License Audit & Optimization',
+                    desc: 'Deep licensing audits across Jira, JSM, Confluence, and Opsgenie for large-scale corporate environments, cleaning inactive groups, public boards, and orphaned users to reduce licensing waste and maintain compliance readiness.'
+                }
+            },
+            opsgenie: {
+                es: {
+                    badge: 'ITSM | Opsgenie Migration',
+                    title: 'Migración y Estrategia ITSM con Opsgenie',
+                    desc: 'Evaluación de riesgos del ciclo de vida de Opsgenie y planificación de migración por fases hacia Jira Service Management (JSM), garantizando la continuidad operativa mediante pruebas en entornos Sandbox.'
+                },
+                en: {
+                    badge: 'ITSM | Opsgenie Migration',
+                    title: 'Opsgenie Migration & ITSM Strategy',
+                    desc: 'Lifecycle risk assessment of Opsgenie and phased migration planning towards Jira Service Management (JSM), ensuring business continuity through structured sandbox testing strategies.'
+                }
+            }
+        };
+
+        function openCaseStudy(caseKey, lang) {
+            const l = lang === 'en' ? 'en' : 'es';
+            const data = caseStudiesData[caseKey] && caseStudiesData[caseKey][l];
+            if (!data) return;
+
+            const panel = document.getElementById('case-detail-' + l);
+            document.getElementById('case-badge-' + l).textContent = data.badge;
+            document.getElementById('case-title-' + l).textContent = data.title;
+            document.getElementById('case-desc-' + l).textContent = data.desc;
+
+            panel.querySelectorAll('.case-pill-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-case') === caseKey);
+            });
+
+            panel.classList.add('open');
+            setTimeout(() => {
+                panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 40);
+        }
+
+        function closeCaseStudy(lang) {
+            const l = lang === 'en' ? 'en' : 'es';
+            const panel = document.getElementById('case-detail-' + l);
+            if (panel) panel.classList.remove('open');
+        }
+
+        // Si alguien entra con #novedades en la URL (ej. desde tu bio de Instagram), abre Novedades directo
+        if (window.location.hash === '#novedades') {
+            switchView('novedades', true);
+        }
+
+        applyLanguage(document.documentElement.lang === 'en' ? 'en' : 'es');
+        document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });
+    </script>
+</body>
+</html>

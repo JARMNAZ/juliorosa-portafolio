@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julio Rosa | Atlassian Administrator & IT Consultant</title>
+    <meta name="description" content="Julio Rosa – Administrador Atlassian (Jira, Jira Service Management, Confluence) y consultor IT en República Dominicana. Automatización con n8n y APIs, consultoría ITSM y ciberseguridad.">
+    <meta name="author" content="Julio Rosa">
+    <link rel="canonical" href="https://jarmnaz.github.io/juliorosa-portafolio/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0f1013">
+
+    <!-- Vista previa al compartir (LinkedIn, WhatsApp, X) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Julio Rosa">
+    <meta property="og:title" content="Julio Rosa | Atlassian Administrator & IT Consultant">
+    <meta property="og:description" content="Administrador Atlassian y consultor IT: Jira, JSM, Confluence, automatización con n8n y consultoría ITSM.">
+    <meta property="og:url" content="https://jarmnaz.github.io/juliorosa-portafolio/">
+    <meta property="og:image" content="https://jarmnaz.github.io/juliorosa-portafolio/julio-rosa.jpg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:alt" content="Foto de Julio Rosa">
+    <meta property="og:locale" content="es_DO">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Julio Rosa | Atlassian Administrator & IT Consultant">
+    <meta name="twitter:description" content="Administrador Atlassian y consultor IT: Jira, JSM, Confluence, automatización con n8n y consultoría ITSM.">
+    <meta name="twitter:image" content="https://jarmnaz.github.io/juliorosa-portafolio/julio-rosa.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Julio Rosa",
+        "jobTitle": "Atlassian Administrator & IT Consultant",
+        "url": "https://jarmnaz.github.io/juliorosa-portafolio/",
+        "image": "https://jarmnaz.github.io/juliorosa-portafolio/julio-rosa.jpg",
+        "worksFor": { "@type": "Organization", "name": "Delivery Hero (PedidosYa)" },
+        "address": { "@type": "PostalAddress", "addressCountry": "DO" },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Instituto Tecnológico de Las Américas (ITLA)" },
+            { "@type": "CollegeOrUniversity", "name": "Universidad del Caribe (UNICARIBE)" }
+        ],
+        "knowsAbout": ["Jira Software", "Jira Service Management", "Confluence", "ITSM", "n8n", "REST APIs", "Cybersecurity"],
+        "sameAs": [
+            "https://www.linkedin.com/in/julio-rosa-a02793180",
+            "https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf"
+        ]
+    }
+    </script>
+
+    <!-- Aplica el idioma guardado (o el del navegador) antes de pintar la página -->
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('lang'); } catch (e) {}
+            var lang = saved || ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+            document.documentElement.lang = lang;
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f1013;
+            --bg-card: #1a1c23;
+            --accent: #ccff00;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* --- Language Toggle Button --- */
+        .lang-toggle-container {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: 1000;
+        }
+
+        #lang-toggle-btn {
+            background-color: var(--bg-card);
+            color: var(--text-main);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        #lang-toggle-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6rem 0;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .hero-text { flex: 1; min-width: 300px; }
+        .hero-text h3 { color: var(--text-muted); font-weight: 400; margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .hero-text h1 { font-size: 4rem; margin: 0; line-height: 1.1; color: var(--accent); }
+        .hero-text h2 { font-size: 1.8rem; margin: 1rem 0; font-weight: 600; }
+        .hero-text p { color: var(--text-muted); max-width: 550px; margin-bottom: 2rem; font-size: 1.05rem; }
+
+        .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .btn { display: inline-block; background-color: var(--accent); color: var(--bg-dark); padding: 0.8rem 1.8rem; border-radius: 30px; text-decoration: none; font-weight: 700; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 2px solid var(--accent); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(204, 255, 0, 0.2); }
+        .btn-outline { background-color: transparent; color: var(--accent); }
+        .btn-outline:hover { background-color: rgba(204, 255, 0, 0.1); }
+        
+        .btn-linkedin { background-color: #0077b5; color: white; border-color: #0077b5; }
+        .btn-linkedin:hover { box-shadow: 0 10px 20px rgba(0, 119, 181, 0.3); color: white; }
+        .btn-whatsapp { background-color: #25D366; color: white; border-color: #25D366; }
+        .btn-whatsapp:hover { box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); color: white; }
+
+        /* --- Profile Image --- */
+        .hero-image { flex: 1; display: flex; justify-content: center; position: relative; }
+        .image-wrapper { position: relative; width: 350px; height: 350px; border-radius: 50%; background: linear-gradient(45deg, var(--bg-card), var(--accent)); padding: 5px; }
+        .image-wrapper img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; background-color: var(--bg-dark); }
+
+        /* --- Sections & Grid --- */
+        section { padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.05); }
+        .section-title { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
+        .section-title span { color: var(--accent); }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+        .card { background-color: var(--bg-card); padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border: 1px solid transparent; }
+        .card:hover { transform: translateY(-5px); border-color: rgba(204, 255, 0, 0.3); }
+        .card h3 { color: var(--text-main); margin-top: 0; font-size: 1.3rem; }
+        .card h3.service-title { color: var(--accent); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.8rem; margin-bottom: 1.2rem; }
+        .card p, .card li { color: var(--text-muted); font-size: 0.95rem; }
+        .card .btn { margin-top: 0.5rem; font-size: 0.9rem; padding: 0.6rem 1.4rem; }
+        .date-badge { display: inline-block; background-color: rgba(204,255,0,0.1); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem; }
+
+        ul.styled-list { list-style: none; padding-left: 0; }
+        ul.styled-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem; }
+        ul.styled-list li::before { content: '✔'; color: var(--accent); position: absolute; left: 0; font-size: 0.9rem; }
+
+        /* --- Project/Experience Cards (Full Width) --- */
+        .full-card { background-color: var(--bg-card); padding: 3rem; border-radius: 20px; margin-bottom: 2rem; border: 1px solid transparent; transition: transform 0.3s ease; }
+        .full-card:hover { transform: translateY(-5px); border-color: rgba(204, 255, 0, 0.3); }
+        .full-card h3 { font-size: 1.6rem; color: var(--accent); margin-bottom: 0.5rem; margin-top: 0; }
+        .subtitle { color: var(--text-main); font-weight: 600; margin-bottom: 0.5rem; display: block; font-size: 1.1rem; }
+        .company { color: var(--text-muted); font-style: italic; margin-bottom: 1.5rem; display: block; }
+
+        /* --- Contact --- */
+        .contact-box { background-color: var(--accent); color: var(--bg-dark); padding: 3rem; border-radius: 20px; text-align: center; }
+        .contact-box h2 { margin-top: 0; font-size: 2.5rem; }
+        .contact-box p { font-weight: 600; margin-bottom: 2rem; }
+        .contact-box .btn { background-color: var(--bg-dark); color: var(--accent); border: none; margin: 0.5rem; }
+        .contact-box .btn:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+        .contact-box .btn-whatsapp-alt { background-color: var(--bg-dark); color: #25D366; border: 2px solid #25D366; }
+        .contact-box .contact-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+        .contact-link { color: var(--bg-dark); font-weight: 700; }
+
+        /* --- Contact Form (Oculto / Comentado) --- */
+        /*
+        .contact-form { max-width: 560px; margin: 2.5rem auto 0; text-align: left; display: grid; gap: 1rem; }
+        .contact-form label { display: block; font-weight: 600; font-size: 0.95rem; margin-bottom: 0.3rem; }
+        .contact-form input, .contact-form textarea { width: 100%; box-sizing: border-box; padding: 0.8rem 1rem; border-radius: 12px; border: 2px solid transparent; background-color: var(--bg-dark); color: var(--text-main); font-family: inherit; font-size: 1rem; }
+        .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--bg-card); box-shadow: 0 0 0 3px rgba(15, 16, 19, 0.4); }
+        .contact-form textarea { min-height: 140px; resize: vertical; }
+        .contact-form .btn { justify-self: center; margin: 0.5rem 0 0; cursor: pointer; font-family: inherit; font-size: 1rem; }
+        .contact-form .btn:disabled { opacity: 0.6; cursor: wait; transform: none; }
+        .form-status { text-align: center; font-weight: 600; margin: 0; min-height: 1.6em; }
+        .hidden-field { position: absolute; left: -9999px; }
+        */
+
+        /* --- Footer --- */
+        .site-footer { border-top: 1px solid rgba(255,255,255,0.05); padding: 2rem 0; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
+        .site-footer a { color: var(--text-muted); margin: 0 0.6rem; }
+        .site-footer a:hover { color: var(--accent); }
+
+        /* --- Idioma: solo se muestra el bloque del idioma activo --- */
+        html[lang="en"] #content-es, html[lang="en"] .footer-es { display: none; }
+        html:not([lang="en"]) #content-en, html:not([lang="en"]) .footer-en { display: none; }
+
+        /* --- Accesibilidad --- */
+        html { scroll-behavior: smooth; }
+        a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+        .contact-box a:focus-visible, .contact-box button:focus-visible { outline-color: var(--bg-dark); }
+        .skip-link { position: absolute; left: 1rem; top: -4rem; background: var(--accent); color: var(--bg-dark); padding: 0.6rem 1rem; border-radius: 10px; font-weight: 700; z-index: 2000; }
+        .skip-link:focus { top: 1rem; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition: none !important; animation: none !important; }
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 3rem; }
+            .hero { text-align: center; justify-content: center; }
+            .btn-group { justify-content: center; }
+            .full-card { padding: 2rem; }
+            .lang-toggle-container { top: 1rem; right: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Saltar al contenido / Skip to content</a>
+
+    <!-- Botón para cambiar de idioma -->
+    <div class="lang-toggle-container">
+        <button id="lang-toggle-btn" type="button" onclick="toggleLanguage()" aria-label="Switch to English">EN</button>
+    </div>
+
+    <main id="main">
+    <!-- ================= CONTENIDO EN ESPAÑOL ================= -->
+    <div id="content-es" lang="es">
+        <div class="container">
+            <!-- Hero Section -->
+            <header class="hero">
+                <div class="hero-text">
+                    <h3>Hola, soy</h3>
+                    <h1>Julio Rosa</h1>
+                    <h2>Atlassian Administrator & IT Consultant</h2>
+                    <p>Consultor IT y Tecnólogo en Seguridad de la Información con más de 5 años de experiencia. Especialista en la suite Atlassian (Jira/Confluence), soporte empresarial nivel Senior, ciberseguridad corporativa e integraciones automatizadas (n8n, APIs). Ayudo a escalar operaciones tecnológicas eliminando el ruido operativo.</p>
+                    
+                    <div class="btn-group">
+                        <a href="#services-es" class="btn">Mis Servicios</a>
+                        <a href="#projects-es" class="btn btn-outline">Casos de Estudio</a>
+                        <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">WhatsApp</a>
+                        <a href="https://www.linkedin.com/in/julio-rosa-a02793180" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">LinkedIn</a>
+                        <a href="julio-rosa-cv.pdf" target="_blank" rel="noopener" class="btn btn-outline" download="Julio-Rosa-CV.pdf">Descargar CV (inglés)</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="julio-rosa.jpg" alt="Julio Rosa - Atlassian Administrator" width="400" height="400" fetchpriority="high">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Experiencia Laboral -->
+            <section id="experience-es">
+                <h2 class="section-title">Trayectoria <span>Profesional</span></h2>
+                <div class="full-card">
+                    <h3>Internal IT Support Sr Analyst | Atlassian Administrator</h3>
+                    <span class="company">Delivery Hero (PedidosYa) · República Dominicana | Marzo 2025 - Presente</span>
+                    <p>Administración integral de la suite Atlassian para operaciones a gran escala en LATAM. Mentoría a equipos técnicos y optimización de infraestructura IT.</p>
+                    <ul class="styled-list">
+                        <li>Diseño, configuración y gobernanza de proyectos de alta criticidad en Jira Software y Jira Service Management.</li>
+                        <li>Desarrollo de scripts y automatizaciones avanzadas multiplataforma (n8n, APIs REST) para integrar Jira con el core del negocio.</li>
+                        <li>Gestión avanzada de seguridad, cumplimiento y rendimiento de la plataforma Atlassian.</li>
+                        <li>Soporte estratégico a proyectos interdepartamentales, mejorando la trazabilidad y eficiencia (SLAs, Workflows).</li>
+                    </ul>
+                </div>
+                <div class="full-card">
+                    <h3>Internal IT Support Analyst</h3>
+                    <span class="company">Delivery Hero (PedidosYa) · República Dominicana | Agosto 2021 - Marzo 2025</span>
+                    <p>Soporte técnico remoto a más de 14 países en LATAM, gestionando identidad, redes y ciberseguridad corporativa.</p>
+                    <ul class="styled-list">
+                        <li>Administración de Google Workspace, Office 365, Okta SSO y JumpCloud.</li>
+                        <li>Despliegue y administración de ciberseguridad endpoint con Kaspersky, SentinelOne y Absolute.</li>
+                        <li>Gestión de redes LAN/WAN (Fortinet, Aruba, UniFi) y Active Directory (DNS, DHCP).</li>
+                        <li>Gestión de compras e inventario tecnológico corporativo utilizando SAP y Ariba.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Servicios -->
+            <section id="services-es">
+                <h2 class="section-title">Lo que <span>Hago</span></h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3 class="service-title">⚙️ Atlassian & ITSM</h3>
+                        <ul class="styled-list">
+                            <li>Implementación y migración de Jira Software y JSM.</li>
+                            <li>Diseño de Workflows, SLAs y Portales de Help Desk.</li>
+                            <li>Configuración de permisos, colas y campos personalizados.</li>
+                            <li>Estructuración de bases de conocimiento en Confluence.</li>
+                            <li>Auditoría y optimización de instancias empresariales.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">🤖 Automatización & No-Code</h3>
+                        <ul class="styled-list">
+                            <li>Automatización avanzada de procesos, enfocada primariamente en el ecosistema Atlassian.</li>
+                            <li>Creación de flujos y sincronización de datos con n8n.</li>
+                            <li>Consumo de APIs REST y webhooks para integrar sistemas.</li>
+                            <li>Automatizaciones inteligentes y asignación de tickets.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">📊 Business Intelligence</h3>
+                        <ul class="styled-list">
+                            <li>Creación de dashboards ejecutivos en Looker Studio.</li>
+                            <li>Métricas de IT y KPIs de productividad (Help Desk).</li>
+                            <li>Generación y envío de reportes automáticos.</li>
+                            <li>Análisis de encuestas de satisfacción.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">💻 Soporte TI & Cloud</h3>
+                        <ul class="styled-list">
+                            <li>Soporte técnico remoto y diagnóstico de hardware/software.</li>
+                            <li>Implementación de Google Workspace y Microsoft 365.</li>
+                            <li>Gestión de Active Directory y Okta SSO.</li>
+                            <li>Configuración de respaldos en la nube y correos corporativos.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">🌐 Web & IA</h3>
+                        <ul class="styled-list">
+                            <li>Desarrollo de landing pages, portafolios y sitios corporativos.</li>
+                            <li>Implementación de Chatbots y asistentes de IA.</li>
+                            <li>Automatización documental y respuestas automáticas.</li>
+                            <li>Diseño responsive con integración a WhatsApp y Maps.</li>
+                            <li>Desarrollo Serverless (Google Apps Script, JS ES6+, HTML5, CSS3).</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">📚 Consultoría & Capacitación</h3>
+                        <ul class="styled-list">
+                            <li>Consultoría estratégica ITSM y procesos de mesa de ayuda.</li>
+                            <li>Capacitación en Jira, JSM y Confluence para equipos.</li>
+                            <li>Servicios dedicados para organizaciones e individuos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Casos de Estudio -->
+            <section id="projects-es">
+                <h2 class="section-title">Casos de Estudio & <span>Consultoría</span></h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Sitting Digital para Bodas</h3>
+                        <span class="date-badge">Serverless | Google Apps Script</span>
+                        <p>Desarrollo de un sistema web móvil interactivo para la gestión de invitados en tiempo real. Arquitectura serverless utilizando Google Sheets como base de datos y Apps Script. Frontend Mobile-First con JS ES6+, HTML5 y CSS3, con control de concurrencia y auditoría inmutable.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Mesa de Servicio NOC - Sector Telecom & Hospitality</h3>
+                        <span class="date-badge">Jira Service Management</span>
+                        <p>Diseño de JSM como centro de operaciones (NOC) para gestionar redes, fibra (GPON) y CCTV. Implementación de reglas estrictas de escalamiento departamental y SLAs dinámicos segmentados por prioridad (P1-P4). Integración multicanal vía REST API con centralitas (FreePBX) y sistemas de monitoreo (Zabbix/PRTG).</p>
+                    </div>
+                    <div class="card">
+                        <h3>Merchant Integration Workflow - Fintech</h3>
+                        <span class="date-badge">Jira Software | TGN</span>
+                        <p>Creación de un ecosistema en Jira para controlar la integración de clientes comerciales (Merchants) desde Sandbox hasta Producción. Uso de transiciones bloqueantes, Table Grid Next Gen (TGN) para perfiles antifraude, y Smart Checklists para auditoría inmutable de aprobaciones legales y financieras.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Auditoría y Optimización de Licencias Enterprise</h3>
+                        <span class="date-badge">Atlassian Governance</span>
+                        <p>Ejecución de auditorías profundas de licencias en Jira, JSM, Confluence y Opsgenie para entornos corporativos a gran escala. Limpieza de grupos inactivos, tableros públicos y usuarios huérfanos, logrando reducir el desperdicio de licencias manteniendo la preparación para auditorías de cumplimiento.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Migración y Estrategia ITSM con Opsgenie</h3>
+                        <span class="date-badge">ITSM | Opsgenie</span>
+                        <p>Evaluación de riesgos del ciclo de vida de Opsgenie y el impacto del roadmap de Atlassian. Coordinación de la planificación de migración hacia Jira Service Management (JSM) garantizando la continuidad del negocio mediante despliegues por fases y estrategias de prueba en entornos Sandbox.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Educación -->
+            <section id="education-es">
+                <h2 class="section-title">Educación & <span>Certificaciones</span></h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Certificaciones Atlassian & Agile</h3>
+                        <ul class="styled-list">
+                            <li>Atlassian Credentialed in JSM Fundamentals with AI</li>
+                            <li>Atlassian Credentialed in Forge Fundamentals (ACH-805)</li>
+                            <li>Atlassian Credentialed in Rovo Fundamentals (ACH-800)</li>
+                            <li>Registered Scrum Basics™</li>
+                            <li>Gestión de Proyectos con Jira</li>
+                        </ul>
+                        <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Mi perfil en Atlassian Community</a>
+                    </div>
+                    <div class="card">
+                        <h3>Ciberseguridad, Redes & TI</h3>
+                        <ul class="styled-list">
+                            <li>Cisco CyberOps Associate (Networking Academy)</li>
+                            <li>Fortinet NSE 1 Network Security Associate</li>
+                            <li>Cisco CCNA Routing and Switching (Básico)</li>
+                            <li>Ciberseguridad CompTIA Security+ (SYO-501)</li>
+                            <li>NDG Linux Essentials (Cisco)</li>
+                            <li>Automatización n8n Essentials (Básico e Intermedio)</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Formación Académica</h3>
+                        <ul class="styled-list">
+                            <li><strong>Ingeniería de Software</strong> (En curso)<br>Universidad del Caribe (UNICARIBE)</li>
+                            <li><strong>Tecnólogo en Seguridad de la Información</strong><br>Graduado con honores - Instituto Tecnológico de Las Américas (ITLA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacto -->
+            <section id="contact-es">
+                <div class="contact-box">
+                    <h2>¿Iniciamos un proyecto?</h2>
+                    <p>Disponibilidad para auditorías Jira, automatización y consultoría ITSM (A partir de las 6:00 PM GMT-4).</p>
+                    <a href="mailto:juliorosamejia@gmail.com" class="btn">juliorosamejia@gmail.com</a>
+                    <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-alt">Escríbeme por WhatsApp</a>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/julio-rosa-a02793180" target="_blank" rel="noopener noreferrer" class="contact-link">Conectar en LinkedIn</a>
+                        <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer" class="contact-link">Atlassian Community</a>
+                    </div>
+
+                    <!-- Formulario comentado en español -->
+                    <!--
+                    <form class="contact-form" name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" data-msg-sending="Enviando…" data-msg-ok="¡Gracias! Tu mensaje fue enviado. Te responderé pronto." data-msg-error="No se pudo enviar el mensaje. Inténtalo de nuevo o escríbeme por correo.">
+                        <input type="hidden" name="form-name" value="contact">
+                        <input type="hidden" name="language" value="es">
+                        <p class="hidden-field" aria-hidden="true">
+                            <label>No llenes este campo si eres humano: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+                        </p>
+                        <div>
+                            <label for="name-es">Nombre</label>
+                            <input id="name-es" type="text" name="name" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label for="email-es">Correo electrónico</label>
+                            <input id="email-es" type="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div>
+                            <label for="message-es">¿En qué te puedo ayudar?</label>
+                            <textarea id="message-es" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                    -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ================= ENGLISH CONTENT ================= -->
+    <div id="content-en" lang="en">
+        <div class="container">
+            <!-- Hero Section -->
+            <header class="hero">
+                <div class="hero-text">
+                    <h3>Hello, I'm</h3>
+                    <h1>Julio Rosa</h1>
+                    <h2>Atlassian Administrator & IT Consultant</h2>
+                    <p>IT Consultant and Information Security Technologist with over 5 years of experience. Specialist in the Atlassian suite (Jira/Confluence), Senior enterprise support, corporate cybersecurity, and automated integrations (n8n, APIs). I help scale technological operations by eliminating operational noise.</p>
+                    
+                    <div class="btn-group">
+                        <a href="#services-en" class="btn">My Services</a>
+                        <a href="#projects-en" class="btn btn-outline">Case Studies</a>
+                        <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">WhatsApp</a>
+                        <a href="https://www.linkedin.com/in/julio-rosa-a02793180" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">LinkedIn</a>
+                        <a href="julio-rosa-cv.pdf" target="_blank" rel="noopener" class="btn btn-outline" download="Julio-Rosa-CV.pdf">Download Resume</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="julio-rosa.jpg" alt="Julio Rosa - Atlassian Administrator" width="400" height="400" fetchpriority="high">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Experience -->
+            <section id="experience-en">
+                <h2 class="section-title">Professional <span>Experience</span></h2>
+                <div class="full-card">
+                    <h3>Internal IT Support Sr Analyst | Atlassian Administrator</h3>
+                    <span class="company">Delivery Hero (PedidosYa) · Dominican Republic | March 2025 - Present</span>
+                    <p>Comprehensive administration of the Atlassian suite for large-scale operations across LATAM. Technical team mentoring and IT infrastructure optimization.</p>
+                    <ul class="styled-list">
+                        <li>Design, configuration, and governance of highly critical projects in Jira Software and Jira Service Management.</li>
+                        <li>Development of scripts and advanced cross-platform automations (n8n, REST APIs) to integrate Jira with the core business.</li>
+                        <li>Advanced management of platform security, compliance, and performance within Atlassian.</li>
+                        <li>Strategic support for cross-departmental projects, improving traceability and efficiency (SLAs, Workflows).</li>
+                    </ul>
+                </div>
+                <div class="full-card">
+                    <h3>Internal IT Support Analyst</h3>
+                    <span class="company">Delivery Hero (PedidosYa) · Dominican Republic | August 2021 - March 2025</span>
+                    <p>Remote technical support for over 14 countries in LATAM, managing identity, networks, and corporate cybersecurity.</p>
+                    <ul class="styled-list">
+                        <li>Administration of Google Workspace, Office 365, Okta SSO, and JumpCloud.</li>
+                        <li>Deployment and management of endpoint cybersecurity with Kaspersky, SentinelOne, and Absolute.</li>
+                        <li>LAN/WAN network management (Fortinet, Aruba, UniFi) and Active Directory (DNS, DHCP).</li>
+                        <li>Management of IT purchasing and corporate inventory using SAP and Ariba.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section id="services-en">
+                <h2 class="section-title">What I <span>Do</span></h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3 class="service-title">⚙️ Atlassian & ITSM</h3>
+                        <ul class="styled-list">
+                            <li>Implementation and migration of Jira Software and JSM.</li>
+                            <li>Design of Workflows, SLAs, and Help Desk Portals.</li>
+                            <li>Configuration of permissions, queues, and custom fields.</li>
+                            <li>Structuring knowledge bases in Confluence.</li>
+                            <li>Audit and optimization of enterprise instances.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">🤖 Automation & No-Code</h3>
+                        <ul class="styled-list">
+                            <li>Advanced process automation, primarily focused on the Atlassian ecosystem.</li>
+                            <li>Creation of data synchronization flows using n8n.</li>
+                            <li>Consumption of REST APIs and webhooks to integrate systems.</li>
+                            <li>Smart automations and automated ticket assignment.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">📊 Business Intelligence</h3>
+                        <ul class="styled-list">
+                            <li>Creation of executive dashboards in Looker Studio.</li>
+                            <li>IT metrics and productivity KPIs (Help Desk).</li>
+                            <li>Generation and delivery of automated reports.</li>
+                            <li>Analysis of customer satisfaction surveys.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">💻 IT Support & Cloud</h3>
+                        <ul class="styled-list">
+                            <li>Remote technical support and hardware/software diagnostics.</li>
+                            <li>Implementation of Google Workspace and Microsoft 365.</li>
+                            <li>Management of Active Directory and Okta SSO.</li>
+                            <li>Configuration of cloud backups and corporate emails.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">🌐 Web & AI</h3>
+                        <ul class="styled-list">
+                            <li>Development of landing pages, portfolios, and corporate sites.</li>
+                            <li>Implementation of Chatbots and AI assistants.</li>
+                            <li>Document automation and automated responses.</li>
+                            <li>Responsive design with WhatsApp and Google Maps integrations.</li>
+                            <li>Serverless Development (Google Apps Script, JS ES6+, HTML5, CSS3).</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="service-title">📚 Consulting & Training</h3>
+                        <ul class="styled-list">
+                            <li>Strategic ITSM consulting and service desk processes.</li>
+                            <li>Training in Jira, JSM, and Confluence for teams.</li>
+                            <li>Dedicated services for organizations and individuals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Case Studies -->
+            <section id="projects-en">
+                <h2 class="section-title">Case Studies & <span>Consulting</span></h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Digital Seating Chart for Weddings</h3>
+                        <span class="date-badge">Serverless | Google Apps Script</span>
+                        <p>Developed an interactive mobile web system for real-time guest management. Serverless architecture using Google Sheets as a database and Apps Script. Mobile-First frontend with JS ES6+, HTML5, and CSS3, featuring concurrency control and immutable audit logging.</p>
+                    </div>
+                    <div class="card">
+                        <h3>NOC Service Desk - Telecom & Hospitality</h3>
+                        <span class="date-badge">Jira Service Management</span>
+                        <p>Designed JSM as a Network Operations Center (NOC) to manage networks, GPON fiber, and CCTV. Implemented strict departmental escalation rules and dynamic SLAs segmented by priority (P1-P4). Multichannel REST API integration with PBX systems (FreePBX) and monitoring tools (Zabbix/PRTG).</p>
+                    </div>
+                    <div class="card">
+                        <h3>Merchant Integration Workflow - Fintech</h3>
+                        <span class="date-badge">Jira Software | TGN</span>
+                        <p>Created an ecosystem in Jira to manage the onboarding of commercial clients (Merchants) from Sandbox to Production. Utilized blocking transitions, Table Grid Next Gen (TGN) for anti-fraud profiles, and Smart Checklists for an immutable audit trail of legal and financial approvals.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Enterprise License Audit & Optimization</h3>
+                        <span class="date-badge">Atlassian Governance</span>
+                        <p>Executed deep licensing audits across Jira, JSM, Confluence, and Opsgenie for large-scale corporate environments. Cleaned inactive groups, public boards, and orphaned users, successfully reducing licensing waste while maintaining compliance audit readiness.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Opsgenie Migration & ITSM Strategy</h3>
+                        <span class="date-badge">ITSM | Opsgenie</span>
+                        <p>Evaluated Opsgenie's lifecycle risks and the impact of the Atlassian roadmap. Coordinated migration planning towards Jira Service Management (JSM), ensuring business continuity through phased deployments and sandbox testing strategies.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section id="education-en">
+                <h2 class="section-title">Education & <span>Certifications</span></h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Atlassian & Agile Certifications</h3>
+                        <ul class="styled-list">
+                            <li>Atlassian Credentialed in JSM Fundamentals with AI</li>
+                            <li>Atlassian Credentialed in Forge Fundamentals (ACH-805)</li>
+                            <li>Atlassian Credentialed in Rovo Fundamentals (ACH-800)</li>
+                            <li>Registered Scrum Basics™</li>
+                            <li>Project Management with Jira</li>
+                        </ul>
+                        <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">My Atlassian Community profile</a>
+                    </div>
+                    <div class="card">
+                        <h3>Cybersecurity, Networks & IT</h3>
+                        <ul class="styled-list">
+                            <li>Cisco CyberOps Associate (Networking Academy)</li>
+                            <li>Fortinet NSE 1 Network Security Associate</li>
+                            <li>Cisco CCNA Routing and Switching (Basics)</li>
+                            <li>CompTIA Security+ (SYO-501)</li>
+                            <li>NDG Linux Essentials (Cisco)</li>
+                            <li>n8n Essentials Automation (Basic & Intermediate)</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Academic Background</h3>
+                        <ul class="styled-list">
+                            <li><strong>Software Engineering</strong> (Ongoing)<br>Universidad del Caribe (UNICARIBE)</li>
+                            <li><strong>Information Security Technologist</strong><br>Graduated with Honors - Instituto Tecnológico de Las Américas (ITLA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact-en">
+                <div class="contact-box">
+                    <h2>Shall we start a project?</h2>
+                    <p>Available for Jira audits, automation, and ITSM consulting (After 6:00 PM GMT-4).</p>
+                    <a href="mailto:juliorosamejia@gmail.com" class="btn">juliorosamejia@gmail.com</a>
+                    <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-alt">Message me on WhatsApp</a>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/julio-rosa-a02793180" target="_blank" rel="noopener noreferrer" class="contact-link">Connect on LinkedIn</a>
+                        <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer" class="contact-link">Atlassian Community</a>
+                    </div>
+
+                    <!-- Formulario comentado en inglés -->
+                    <!--
+                    <form class="contact-form" name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" data-msg-sending="Sending…" data-msg-ok="Thanks! Your message was sent. I will get back to you soon." data-msg-error="The message couldn't be sent. Please try again or email me.">
+                        <input type="hidden" name="form-name" value="contact">
+                        <input type="hidden" name="language" value="en">
+                        <p class="hidden-field" aria-hidden="true">
+                            <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+                        </p>
+                        <div>
+                            <label for="name-en">Name</label>
+                            <input id="name-en" type="text" name="name" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label for="email-en">Email</label>
+                            <input id="email-en" type="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div>
+                            <label for="message-en">How can I help you?</label>
+                            <textarea id="message-en" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send message</button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                    -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="footer-es">© <span class="year">2026</span> Julio Rosa · Atlassian Administrator & IT Consultant</p>
+            <p class="footer-en">© <span class="year">2026</span> Julio Rosa · Atlassian Administrator & IT Consultant</p>
+            <nav aria-label="Redes / Social">
+                <a href="https://www.linkedin.com/in/julio-rosa-a02793180" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://community.atlassian.com/user/profile/104a150d-b155-460d-8afe-ef1a99c2cacf" target="_blank" rel="noopener noreferrer">Atlassian Community</a>
+                <a href="https://wa.me/18298507032" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="mailto:juliorosamejia@gmail.com">Email</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // --- Idioma: se guarda la elección y se actualiza el botón ---
+        function applyLanguage(lang) {
+            const btn = document.getElementById('lang-toggle-btn');
+            document.documentElement.lang = lang;
+            if (lang === 'en') {
+                btn.textContent = 'ES';
+                btn.setAttribute('aria-label', 'Ver en español');
+            } else {
+                btn.textContent = 'EN';
+                btn.setAttribute('aria-label', 'Switch to English');
+            }
+        }
+
+        function toggleLanguage() {
+            const next = document.documentElement.lang === 'en' ? 'es' : 'en';
+            try { localStorage.setItem('lang', next); } catch (e) {}
+            applyLanguage(next);
+            window.scrollTo({ top: 0 });
+        }
+
+        applyLanguage(document.documentElement.lang === 'en' ? 'en' : 'es');
+
+        document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });
+
+        /* --- Formulario de contacto (Netlify Forms) comentado para que no genere errores ---
+        document.querySelectorAll('.contact-form').forEach(form => {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const status = form.querySelector('.form-status');
+                const button = form.querySelector('button[type="submit"]');
+                button.disabled = true;
+                status.textContent = form.dataset.msgSending;
+                try {
+                    const response = await fetch('/', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams(new FormData(form)).toString(),
+                    });
+                    if (!response.ok) throw new Error(response.status);
+                    form.reset();
+                    status.textContent = form.dataset.msgOk;
+                } catch (err) {
+                    status.textContent = form.dataset.msgError;
+                } finally {
+                    button.disabled = false;
+                }
+            });
+        });
+        ---------------------------------------------------------------------------------*/
+    </script>
+</body>
+</html>
