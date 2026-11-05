@@ -1132,6 +1132,391 @@
             font-size: 0.9rem;
         }
 
+        /* ================= ADAPTACIÓN INTEGRAL PARA CELULARES (MOBILE-FIRST RESPONSIVE) ================= */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        html, body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .hide-on-mobile {
+                display: none !important;
+            }
+
+            /* 1. Barra de navegación compacta en 2 filas limpias */
+            .site-navbar {
+                padding: 0.55rem 0;
+            }
+            .navbar-inner {
+                padding: 0 1rem;
+                gap: 0.5rem;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .brand-logo {
+                order: 1;
+                font-size: 1.05rem;
+                gap: 0.45rem;
+            }
+            .brand-tag {
+                font-size: 0.68rem;
+                padding: 0.1rem 0.45rem;
+            }
+            #lang-toggle-btn {
+                order: 2;
+                padding: 0.35rem 0.75rem;
+                font-size: 0.78rem;
+            }
+            .nav-controls {
+                order: 3;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.45rem;
+            }
+            .nav-dropdown {
+                width: 100%;
+            }
+            .nav-tab-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 0.5rem 0.55rem;
+                font-size: 0.78rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .nav-badge-new,
+            .dropdown-caret,
+            .dropdown-menu,
+            .nav-dropdown::after {
+                display: none !important;
+            }
+
+            /* 2. Hero Section: Foto arriba centrada, textos adaptados y botones en cuadrícula 2x3 */
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                justify-content: center;
+                padding: 1.6rem 0 2.2rem;
+                gap: 1.25rem;
+            }
+            .hero-image {
+                width: 100%;
+            }
+            .image-wrapper {
+                width: 185px;
+                height: 185px;
+                margin: 0 auto;
+            }
+            .hero-text {
+                min-width: 0;
+                width: 100%;
+            }
+            .hero-text h3 {
+                font-size: 1rem;
+                margin-bottom: 0.25rem;
+            }
+            .hero-text h1 {
+                font-size: 2.35rem;
+            }
+            .hero-text h2 {
+                font-size: 1.18rem;
+                margin: 0.55rem 0 0.75rem;
+                line-height: 1.35;
+            }
+            .hero-text p {
+                font-size: 0.92rem;
+                margin: 0 auto 1.35rem;
+                line-height: 1.55;
+            }
+            .btn-group {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.55rem;
+                width: 100%;
+            }
+            .btn-group .btn {
+                width: 100%;
+                padding: 0.68rem 0.5rem;
+                font-size: 0.8rem;
+                text-align: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+
+            /* 3. Banner Teaser de Instagram, Secciones y Tarjetas */
+            .novedades-teaser {
+                padding: 1.2rem;
+                border-radius: 16px;
+                text-align: center;
+                justify-content: center;
+                gap: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+            .novedades-teaser-text h3 {
+                font-size: 1.05rem;
+            }
+            .novedades-teaser-text p {
+                font-size: 0.85rem;
+            }
+            .novedades-teaser .btn {
+                width: 100%;
+                padding: 0.65rem 1rem;
+                font-size: 0.84rem;
+                text-align: center;
+            }
+            section {
+                padding: 2.4rem 0;
+            }
+            .section-title {
+                font-size: 1.65rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.25;
+            }
+            #projects-es > p,
+            #projects-en > p {
+                margin-top: -0.9rem !important;
+                margin-bottom: 1.5rem !important;
+                font-size: 0.86rem;
+                padding: 0 0.25rem;
+            }
+            .grid,
+            .grid-3,
+            .noc-gallery-grid,
+            .noc-arch-grid,
+            .concept-trio {
+                grid-template-columns: 1fr !important;
+                gap: 1.1rem;
+            }
+            .card,
+            .full-card,
+            .post-article-card,
+            .ig-profile-card {
+                padding: 1.3rem;
+                border-radius: 16px;
+            }
+            .full-card {
+                margin-bottom: 1.15rem;
+            }
+            .full-card h3 {
+                font-size: 1.22rem;
+                line-height: 1.3;
+            }
+            .card h3 {
+                font-size: 1.14rem;
+                line-height: 1.3;
+            }
+            .card p, .card li, .full-card p, .full-card li {
+                font-size: 0.88rem;
+            }
+            .date-badge {
+                font-size: 0.72rem;
+                padding: 0.22rem 0.65rem;
+                margin-bottom: 0.5rem;
+            }
+            .noc-live-pill {
+                margin-left: 0;
+                margin-bottom: 0.5rem;
+                font-size: 0.7rem;
+            }
+
+            /* 4. Panel Detallado de Casos de Estudio en Celular */
+            .case-detail-panel {
+                padding: 1.1rem;
+                border-radius: 18px;
+                margin-top: 1.4rem;
+            }
+            .case-selector-pills,
+            .noc-video-tabs {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                gap: 0.45rem;
+                padding-bottom: 0.4rem;
+                margin-bottom: 1rem;
+                scrollbar-width: none;
+            }
+            .case-selector-pills::-webkit-scrollbar,
+            .noc-video-tabs::-webkit-scrollbar {
+                display: none;
+            }
+            .case-pill-btn,
+            .noc-video-tab {
+                flex: 0 0 auto;
+                white-space: nowrap;
+                font-size: 0.76rem;
+                padding: 0.45rem 0.85rem;
+            }
+            .case-detail-header {
+                gap: 0.9rem;
+                padding-bottom: 1.1rem;
+                margin-bottom: 1.25rem;
+            }
+            .case-detail-header h3 {
+                font-size: 1.3rem;
+                line-height: 1.25;
+            }
+            .case-detail-header p {
+                font-size: 0.86rem;
+            }
+            .case-detail-header .btn {
+                width: 100%;
+                text-align: center;
+                padding: 0.55rem 1rem;
+                font-size: 0.82rem;
+            }
+            .noc-privacy-banner {
+                padding: 0.85rem 0.95rem;
+                font-size: 0.79rem;
+                gap: 0.65rem;
+                align-items: flex-start;
+                margin-bottom: 1.25rem;
+            }
+            .noc-section-subtitle {
+                font-size: 1rem;
+                line-height: 1.35;
+                display: block;
+                padding-left: 0.65rem;
+                margin: 1.5rem 0 0.8rem;
+            }
+            .noc-video-caption-bar {
+                padding: 0.85rem 0.95rem;
+                gap: 0.6rem;
+            }
+            .noc-video-caption-bar h5 {
+                font-size: 0.88rem;
+                line-height: 1.35;
+            }
+            .noc-video-caption-bar p {
+                font-size: 0.78rem;
+                line-height: 1.45;
+            }
+            .noc-shot-thumb-wrap {
+                height: 160px;
+            }
+            .noc-arch-card {
+                padding: 1.1rem;
+            }
+            .code-flow {
+                font-size: 0.74rem;
+                padding: 0.75rem 0.85rem;
+                white-space: pre-wrap;
+                word-break: break-word;
+            }
+            .noc-sla-table {
+                min-width: 500px;
+                font-size: 0.76rem;
+            }
+            .noc-sla-table th,
+            .noc-sla-table td {
+                padding: 0.65rem 0.75rem;
+            }
+
+            /* 5. Hub de Instagram (@juliorosa.tech) y Caja de Contacto en Celular */
+            .tech-hub-hero {
+                padding: 1.5rem 0 1.5rem;
+            }
+            .ig-profile-left {
+                flex-direction: column;
+                text-align: center;
+                min-width: 0;
+                gap: 0.9rem;
+            }
+            .ig-handle {
+                font-size: 1.3rem;
+            }
+            .ig-handle-row,
+            .ig-highlights-row {
+                justify-content: center;
+            }
+            .ig-profile-card > div:last-child {
+                width: 100%;
+            }
+            .ig-profile-card > div:last-child .btn {
+                width: 100%;
+                text-align: center;
+                padding: 0.65rem 1rem;
+                font-size: 0.84rem;
+            }
+            .filter-bar {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                justify-content: flex-start;
+                margin: 1.4rem 0;
+                padding-bottom: 0.35rem;
+                gap: 0.5rem;
+                scrollbar-width: none;
+            }
+            .filter-bar::-webkit-scrollbar {
+                display: none;
+            }
+            .filter-btn {
+                flex: 0 0 auto;
+                white-space: nowrap;
+                font-size: 0.78rem;
+                padding: 0.45rem 0.9rem;
+            }
+            .post-article-card h3 {
+                font-size: 1.22rem;
+            }
+            .post-summary {
+                font-size: 0.88rem;
+            }
+            .doc-Toggle-row .btn {
+                width: 100%;
+                text-align: center;
+                font-size: 0.82rem;
+                padding: 0.65rem 1rem;
+            }
+            .contact-box {
+                padding: 1.75rem 1.15rem;
+                border-radius: 18px;
+            }
+            .contact-box h2 {
+                font-size: 1.6rem;
+                line-height: 1.25;
+            }
+            .contact-box p {
+                font-size: 0.9rem;
+                margin-bottom: 1.25rem;
+            }
+            .contact-box .btn {
+                width: 100%;
+                margin: 0.3rem 0;
+                padding: 0.7rem 1rem;
+                font-size: 0.86rem;
+            }
+
+            /* 6. Lightbox de imágenes en Celular */
+            .noc-lightbox {
+                padding: 0.75rem;
+            }
+            .noc-lightbox-img {
+                max-width: 96vw;
+                max-height: 74vh;
+            }
+            .noc-lightbox-caption {
+                font-size: 0.84rem;
+                padding: 0 0.5rem;
+            }
+            .noc-lightbox-close {
+                top: 0.85rem;
+                right: 0.85rem;
+                padding: 0.4rem 0.85rem;
+                font-size: 0.78rem;
+            }
+        }
+
     </style>
 </head>
 <body data-view="portfolio">
@@ -1167,7 +1552,7 @@
                 <!-- Menú Desplegable 2: Últimas Novedades Julio Rosa Tech -->
                 <div class="nav-dropdown">
                     <button type="button" class="nav-tab-btn tab-novedades" onclick="switchView('novedades')">
-                        ⚡ Últimas Novedades · Julio Rosa Tech
+                        ⚡ Últimas Novedades<span class="hide-on-mobile"> · Julio Rosa Tech</span>
                         <span class="nav-badge-new">IG Docs</span>
                         <span class="dropdown-caret">▼</span>
                     </button>
@@ -1200,7 +1585,7 @@
 
                 <div class="nav-dropdown">
                     <button type="button" class="nav-tab-btn tab-novedades" onclick="switchView('novedades')">
-                        ⚡ Latest Updates · Julio Rosa Tech
+                        ⚡ Latest Updates<span class="hide-on-mobile"> · Julio Rosa Tech</span>
                         <span class="nav-badge-new">IG Docs</span>
                         <span class="dropdown-caret">▼</span>
                     </button>
